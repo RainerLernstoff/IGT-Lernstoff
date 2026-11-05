@@ -1,0 +1,141 @@
+/* =====================================================================
+   AUSSEHEN der App „IGT: Lernstoff“ – Schwarz-Weiß, hell und dunkel,
+   Leiste oben im Dunkelgrau des Logos
+   Gilt für die Startseite (.app) und für alle Blätter (.blatt).
+   ===================================================================== */
+
+/* ---------- Farben ---------- */
+:root {
+  --hg: #ffffff;        /* Hintergrund */
+  --text: #000000;      /* Schrift */
+  --rand: #000000;      /* Rahmen */
+  --flaeche: #ededed;   /* graue Kästen (Infokasten, Kopfzeile von Tabellen) */
+  --leise: #444444;     /* kleine, graue Schrift */
+  color-scheme: light;
+}
+/* Dunkel: wenn das Handy dunkel eingestellt ist (und nicht auf hell umgeschaltet wurde) … */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-thema="hell"]) {
+    --hg: #000000; --text: #ffffff; --rand: #ffffff; --flaeche: #262626; --leise: #bbbbbb;
+    color-scheme: dark;
+  }
+}
+/* … oder wenn man mit ◐ auf dunkel umgeschaltet hat */
+:root[data-thema="dunkel"] {
+  --hg: #000000; --text: #ffffff; --rand: #ffffff; --flaeche: #262626; --leise: #bbbbbb;
+  color-scheme: dark;
+}
+
+/* ---------- Grundlagen ---------- */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--hg);
+  color: var(--text);
+  font-family: "Comic Sans MS", "Comic Neue", "Segoe UI", Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.45;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ---------- Leiste oben: Zurück · Titel · Hell/Dunkel ---------- */
+/* Immer Dunkelgrau mit weißer Schrift wie das Logo (hell und dunkel gleich) */
+.leiste {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; align-items: center; gap: 8px;
+  min-height: 60px; padding: 6px 10px;
+  background: #353338; color: #ffffff;
+}
+.leiste-titel {
+  flex: 1; margin: 0; min-width: 0;
+  font-size: 22px; font-weight: bold;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.leiste-knopf {
+  flex: none; display: flex; align-items: center; justify-content: center;
+  width: 48px; height: 48px;
+  font: inherit; font-size: 26px; line-height: 1; text-decoration: none;
+  color: #ffffff; background: transparent;
+  border: 2px solid #ffffff; border-radius: 12px; cursor: pointer;
+}
+.leiste-knopf[hidden] { display: none; }
+.leiste-knopf:focus-visible { outline-color: #ffffff; }
+
+/* Name im Stil des Logos: Großbuchstaben, Schreibmaschinen-Schrift, weit gesperrt */
+/* Linksbündig: „IGT_“ klein, „LERNSTOFF“ groß, beide auf einer Grundlinie */
+.leiste-titel.logo {
+  font-family: Consolas, "Roboto Mono", "SF Mono", Menlo, "Courier New", monospace;
+  font-weight: normal; font-size: 27px;
+  text-align: left; text-transform: uppercase; letter-spacing: 0.14em;
+  padding-left: 6px;
+}
+.logo-klein { font-size: 15px; letter-spacing: 0.1em; margin-right: 4px; }
+
+/* ---------- Startseite und Auswahl: große Knöpfe ---------- */
+.app { max-width: 640px; margin: 0 auto; padding: 16px; }
+.hinweis { font-size: 20px; margin: 4px 0 14px; }
+.knopf-liste { display: flex; flex-direction: column; gap: 14px; }
+.knopf {
+  display: block; min-height: 72px; padding: 14px 18px;
+  color: var(--text); background: var(--hg); text-decoration: none;
+  border: 3px solid var(--rand); border-radius: 14px;
+}
+.knopf:active { background: var(--text); color: var(--hg); }
+.knopf-name { display: block; font-size: 22px; font-weight: bold; }
+.knopf-info { display: block; font-size: 16px; color: var(--leise); margin-top: 2px; }
+.knopf:active .knopf-info { color: var(--hg); }
+:focus-visible { outline: 4px solid var(--text); outline-offset: 3px; }
+
+/* ---------- Blätter (Arbeitsblatt, Lernplakat) ---------- */
+.blatt { max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }
+.blatt h1 { font-size: 24px; line-height: 1.25; margin: 4px 0 10px; }
+.blatt h2 { font-size: 20px; margin: 30px 0 8px; padding-top: 14px; border-top: 2px solid var(--rand); }
+.blatt p { margin: 0 0 8px; }
+.blatt .auftrag { font-weight: bold; }
+.blatt .stern { color: inherit; }
+.blatt .sym { font-size: 22px; line-height: 1; }
+
+.blatt table { border-collapse: collapse; margin: 6px 0 12px; }
+.blatt td, .blatt th { padding: 6px 8px; vertical-align: top; }
+
+/* Infokasten */
+.blatt .merk { width: 100%; }
+.blatt .merk td { border: 2px solid var(--rand); background: var(--flaeche); padding: 10px 12px; }
+
+/* Tabellen mit Gitter: zu breite Tabellen kann man seitlich wischen */
+.blatt .gitter { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.blatt .gitter td, .blatt .gitter th { border: 1px solid var(--rand); text-align: center; min-width: 40px; }
+.blatt .gitter th { background: var(--flaeche); }
+
+/* Kästchen zum Eintragen */
+.blatt .box { border: 2px solid var(--rand); width: 44px; min-width: 44px; height: 36px; }
+
+/* Felder vom Lernplakat */
+.blatt .feld { width: 100%; table-layout: fixed; }
+.blatt .feld td { border: 2px solid var(--rand); text-align: center; height: 80px; vertical-align: middle; }
+
+/* Bilder: nie breiter als das Handy, immer auf weißem Grund (auch im Dunkelmodus) */
+.blatt img { max-width: 100%; height: auto; background: #ffffff; border-radius: 8px; padding: 4px; }
+
+/* Tabellen ohne Rahmen, die andere Tabellen enthalten, stellen nur zwei Spalten nebeneinander.
+   Am Handy stehen diese Spalten untereinander. (Die kleinen Tabellen darin bleiben, wie sie sind.) */
+.blatt td:has(+ .box) { vertical-align: middle; padding-right: 10px; }
+@media (max-width: 640px) {
+  .blatt table:not([class]):has(table),
+  .blatt table:not([class]):has(table) > tbody,
+  .blatt table:not([class]):has(table) > tbody > tr,
+  .blatt table:not([class]):has(table) > tbody > tr > td { display: block; width: auto; }
+  .blatt table:not([class]):has(table) > tbody > tr > td { padding: 0 0 10px; }
+
+  /* Tabellen am Handy etwas enger, damit sie meistens ohne Wischen hineinpassen */
+  .blatt { padding-left: 12px; padding-right: 12px; }
+  .blatt .gitter td, .blatt .gitter th { padding: 5px 4px; font-size: 16px; min-width: 30px; hyphens: auto; -webkit-hyphens: auto; }
+  .blatt .gitter .sym { font-size: 20px; }
+  .blatt .gitter [style*="nowrap"] { white-space: normal !important; }
+}
+
+/* Drucken: ohne Leiste, schwarz auf weiß */
+@media print {
+  .leiste { display: none; }
+  :root { --hg: #fff; --text: #000; --rand: #000; --flaeche: #ededed; }
+}
