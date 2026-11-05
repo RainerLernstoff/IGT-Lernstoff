@@ -28,10 +28,10 @@ const INHALTE = {
               name: "Wärmepumpe",
               info: "4 Blätter, Lernplakat, Selbstcheck",
               teile: [
-                { name: "1 So funktioniert sie",      info: "Arbeitsblatt",         datei: "inhalte/ait/jg3/waermepumpe/blatt-1.html" },
-                { name: "2 Woher kommt die Wärme?",   info: "Arbeitsblatt",         datei: "inhalte/ait/jg3/waermepumpe/blatt-2.html" },
-                { name: "3 Wie sparsam ist sie?",     info: "Arbeitsblatt",         datei: "inhalte/ait/jg3/waermepumpe/blatt-3.html" },
-                { name: "4 Auf der Baustelle beraten", info: "Arbeitsblatt",        datei: "inhalte/ait/jg3/waermepumpe/blatt-4.html" },
+                { name: "1 So funktioniert sie",      info: "Arbeitsblatt zum Ausfüllen", datei: "inhalte/ait/jg3/waermepumpe/blatt-1.html" },
+                { name: "2 Woher kommt die Wärme?",   info: "Arbeitsblatt zum Ausfüllen", datei: "inhalte/ait/jg3/waermepumpe/blatt-2.html" },
+                { name: "3 Wie sparsam ist sie?",     info: "Arbeitsblatt zum Ausfüllen", datei: "inhalte/ait/jg3/waermepumpe/blatt-3.html" },
+                { name: "4 Auf der Baustelle beraten", info: "Arbeitsblatt zum Ausfüllen", datei: "inhalte/ait/jg3/waermepumpe/blatt-4.html" },
                 { name: "Lernplakat",                 info: "Gruppenarbeit auf A3", datei: "inhalte/ait/jg3/waermepumpe/lernplakat.html" },
                 { name: "✓ Selbstcheck",              info: "24 Fragen, ca. 15 Minuten", datei: "inhalte/ait/jg3/waermepumpe/selbstcheck.html" }
               ]

@@ -1,10 +1,11 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-77db73500d";
+const VERSION = "lernstoff-4284aa4eeb";
 const DATEIEN = [
   "./",
   "app.js",
+  "ausfuellen.js",
   "index.html",
   "inhalte.js",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
