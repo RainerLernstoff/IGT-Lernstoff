@@ -60,20 +60,19 @@
   .versteckt { display: none; }
 </style>
 <style>
-  /* Ergänzt von der Lern-App: Schwarz-Weiß und dunkler Modus */
-  :root { --bg:#fff; --karte:#fff; --text:#000; --leise:#444; --blau:#000; --blau-hell:#ededed; --rand:#000; }
+  /* Ergänzt von der Lern-App: Farben und Schrift wie die App (Entwurf C „Klar und ruhig“, 18.11.2026) und dunkler Modus */
+  :root { --bg:#fff; --karte:#fff; --text:#15202b; --leise:#56616e; --blau:#1c5aa6; --blau-hell:#f1f4f8; --rand:#cdd5df; --stern:#1c5aa6; }
   @media (prefers-color-scheme: dark) {
-    :root:not([data-thema="hell"]) { --bg:#000; --karte:#000; --text:#fff; --leise:#bbb; --blau:#fff; --blau-hell:#262626; --rand:#fff;
-      --gruen:#3ccf6a; --gruen-hell:#0d3318; --rot:#ff6b66; --rot-hell:#3d0f0e; }
+    :root:not([data-thema="hell"]) { --bg:#121820; --karte:#121820; --text:#eef2f6; --leise:#a7b2bf; --blau:#6ea8ff; --blau-hell:#1c2430; --rand:#33404f; --stern:#6ea8ff;
+      --gruen:#4cc46f; --gruen-hell:#13321f; --rot:#ff6b61; --rot-hell:#3d1714; }
   }
-  :root[data-thema="dunkel"] { --bg:#000; --karte:#000; --text:#fff; --leise:#bbb; --blau:#fff; --blau-hell:#262626; --rand:#fff;
-      --gruen:#3ccf6a; --gruen-hell:#0d3318; --rot:#ff6b66; --rot-hell:#3d0f0e; }
-  body { background: var(--bg); }
-  .karte { box-shadow: none; border: 3px solid var(--rand); }
-  .knopf { border-color: var(--rand); }
+  :root[data-thema="dunkel"] { --bg:#121820; --karte:#121820; --text:#eef2f6; --leise:#a7b2bf; --blau:#6ea8ff; --blau-hell:#1c2430; --rand:#33404f; --stern:#6ea8ff;
+      --gruen:#4cc46f; --gruen-hell:#13321f; --rot:#ff6b61; --rot-hell:#3d1714; }
+  body { background: var(--bg); font-family: "Atkinson Hyperlegible", "Segoe UI", Roboto, sans-serif; }
+  .karte { box-shadow: none; border: 0; padding-left: 4px; padding-right: 4px; }
+  .knopf { border-color: var(--rand); background: var(--blau-hell); }
   .haupt, .haupt:hover:not(:disabled) { background: var(--blau); color: var(--bg); border-color: var(--blau); }
   .balken { background: var(--blau-hell); }
-  .stern { color: inherit; }
   .bild { background: #fff; }
 </style>
 </head>
