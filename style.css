@@ -1,28 +1,40 @@
 /* =====================================================================
-   AUSSEHEN der App „IGT: Lernstoff“ – Schwarz-Weiß, hell und dunkel,
-   Leiste oben im Dunkelgrau des Logos
+   AUSSEHEN der App „IGT: Lernstoff“ – Entwurf C „Klar und ruhig“   Schrift Atkinson Hyperlegible (für schwache Leser gebaut), viel Luft,
+   Akzent Installateur-Blau, Knöpfe mit Farbstreifen in den Leitungs-Kennfarben.
+   Leiste oben bleibt im Dunkelgrau des Logos.
    Gilt für die Startseite (.app) und für alle Blätter (.blatt).
+   Vorher-Stand (Schwarz-Weiß, Comic Sans): tmp\backup_vor_design_c\
    ===================================================================== */
+
+/* ---------- Schrift (liegt in app\schriften, damit es offline geht; Lizenz OFL.txt) ---------- */
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 400; font-style: normal; font-display: swap; src: url("schriften/atkinson-400.woff2") format("woff2"); }
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 700; font-style: normal; font-display: swap; src: url("schriften/atkinson-700.woff2") format("woff2"); }
 
 /* ---------- Farben ---------- */
 :root {
   --hg: #ffffff;        /* Hintergrund */
-  --text: #000000;      /* Schrift */
-  --rand: #000000;      /* Rahmen */
-  --flaeche: #ededed;   /* graue Kästen (Infokasten, Kopfzeile von Tabellen) */
-  --leise: #444444;     /* kleine, graue Schrift */
+  --text: #15202b;      /* Schrift */
+  --leise: #56616e;     /* kleine, graue Schrift */
+  --flaeche: #f1f4f8;   /* Knöpfe, Infokasten, Kopfzeile von Tabellen */
+  --rand: #cdd5df;      /* feine Linien */
+  --strich: #56616e;    /* Rahmen von Kästchen und Eingabefeldern (gut sichtbar) */
+  --akzent: #1c5aa6;    /* Installateur-Blau */
+  --akzent-text: #ffffff;
+  --gruen: #1e8e3e; --rot: #c5221f;
   color-scheme: light;
 }
 /* Dunkel: wenn das Handy dunkel eingestellt ist (und nicht auf hell umgeschaltet wurde) … */
 @media (prefers-color-scheme: dark) {
   :root:not([data-thema="hell"]) {
-    --hg: #000000; --text: #ffffff; --rand: #ffffff; --flaeche: #262626; --leise: #bbbbbb;
+    --hg: #121820; --text: #eef2f6; --leise: #a7b2bf; --flaeche: #1c2430; --rand: #33404f; --strich: #a7b2bf;
+    --akzent: #6ea8ff; --akzent-text: #0d1620; --gruen: #4cc46f; --rot: #ff6b61;
     color-scheme: dark;
   }
 }
 /* … oder wenn man mit ◐ auf dunkel umgeschaltet hat */
 :root[data-thema="dunkel"] {
-  --hg: #000000; --text: #ffffff; --rand: #ffffff; --flaeche: #262626; --leise: #bbbbbb;
+  --hg: #121820; --text: #eef2f6; --leise: #a7b2bf; --flaeche: #1c2430; --rand: #33404f; --strich: #a7b2bf;
+  --akzent: #6ea8ff; --akzent-text: #0d1620; --gruen: #4cc46f; --rot: #ff6b61;
   color-scheme: dark;
 }
 
@@ -32,9 +44,9 @@ html, body { margin: 0; padding: 0; }
 body {
   background: var(--hg);
   color: var(--text);
-  font-family: "Comic Sans MS", "Comic Neue", "Segoe UI", Roboto, sans-serif;
+  font-family: "Atkinson Hyperlegible", "Segoe UI", Roboto, sans-serif;
   font-size: 18px;
-  line-height: 1.45;
+  line-height: 1.5;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -48,15 +60,15 @@ body {
 }
 .leiste-titel {
   flex: 1; margin: 0; min-width: 0;
-  font-size: 22px; font-weight: bold;
+  font-size: 20px; font-weight: bold;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 .leiste-knopf {
   flex: none; display: flex; align-items: center; justify-content: center;
-  width: 48px; height: 48px;
-  font: inherit; font-size: 26px; line-height: 1; text-decoration: none;
+  width: 46px; height: 46px;
+  font: inherit; font-size: 24px; line-height: 1; text-decoration: none;
   color: #ffffff; background: transparent;
-  border: 2px solid #ffffff; border-radius: 12px; cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.85); border-radius: 10px; cursor: pointer;
 }
 .leiste-knopf[hidden] { display: none; }
 .leiste-knopf:focus-visible { outline-color: #ffffff; }
@@ -71,51 +83,54 @@ body {
 }
 .logo-klein { font-size: 15px; letter-spacing: 0.1em; margin-right: 4px; }
 
-/* ---------- Startseite und Auswahl: große Knöpfe ---------- */
-.app { max-width: 640px; margin: 0 auto; padding: 16px; }
-.hinweis { font-size: 20px; margin: 4px 0 14px; }
-.knopf-liste { display: flex; flex-direction: column; gap: 14px; }
+/* ---------- Startseite und Auswahl: große Knöpfe mit Farbstreifen ---------- */
+.app { max-width: 640px; margin: 0 auto; padding: 22px 18px; }
+.gruss { font-size: 26px; font-weight: bold; line-height: 1.2; margin: 0 0 4px; }
+.hinweis { color: var(--leise); margin: 0 0 20px; }
+.knopf-liste { display: flex; flex-direction: column; gap: 12px; }
 .knopf {
-  display: block; min-height: 72px; padding: 14px 18px;
-  color: var(--text); background: var(--hg); text-decoration: none;
-  border: 3px solid var(--rand); border-radius: 14px;
+  display: flex; align-items: stretch; gap: 14px; min-height: 72px;
+  color: var(--text); background: var(--flaeche); text-decoration: none;
+  border-radius: 12px; overflow: hidden;
 }
-.knopf:active { background: var(--text); color: var(--hg); }
-.knopf-name { display: block; font-size: 22px; font-weight: bold; }
-.knopf-info { display: block; font-size: 16px; color: var(--leise); margin-top: 2px; }
-.knopf:active .knopf-info { color: var(--hg); }
-:focus-visible { outline: 4px solid var(--text); outline-offset: 3px; }
+.knopf-streifen { width: 8px; flex: none; }
+.knopf-text { padding: 14px 14px 14px 0; align-self: center; }
+.knopf:active { background: var(--rand); }
+.knopf-name { display: block; font-size: 21px; font-weight: bold; line-height: 1.25; }
+.knopf-info { display: block; font-size: 15.5px; color: var(--leise); margin-top: 2px; }
+:focus-visible { outline: 3px solid var(--akzent); outline-offset: 3px; }
 
 /* ---------- Blätter (Arbeitsblatt, Lernplakat) ---------- */
-.blatt { max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }
-.blatt h1 { font-size: 24px; line-height: 1.25; margin: 4px 0 10px; }
-.blatt h2 { font-size: 20px; margin: 30px 0 8px; padding-top: 14px; border-top: 2px solid var(--rand); }
+.blatt { max-width: 760px; margin: 0 auto; padding: 22px 18px 48px; }
+.blatt h1 { font-size: 27px; line-height: 1.2; margin: 0 0 14px; }
+.blatt h2 { font-size: 21px; line-height: 1.3; margin: 34px 0 8px; padding-top: 16px; border-top: 1px solid var(--rand); }
 .blatt p { margin: 0 0 8px; }
 .blatt .auftrag { font-weight: bold; }
-.blatt .stern { color: inherit; }
+.blatt .stern { color: var(--akzent); }
 .blatt .sym { font-size: 22px; line-height: 1; }
 
 .blatt table { border-collapse: collapse; margin: 6px 0 12px; }
 .blatt td, .blatt th { padding: 6px 8px; vertical-align: top; }
 
-/* Infokasten */
-.blatt .merk { width: 100%; }
-.blatt .merk td { border: 2px solid var(--rand); background: var(--flaeche); padding: 10px 12px; }
+/* Infokasten: blauer Strich links, helle Fläche */
+.blatt .merk { width: 100%; border-collapse: separate; }
+.blatt .merk td { background: var(--flaeche); border-left: 6px solid var(--akzent); border-radius: 0 12px 12px 0; padding: 14px 16px; }
 
 /* Tabellen mit Gitter: zu breite Tabellen kann man seitlich wischen */
 .blatt .gitter { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .blatt .gitter td, .blatt .gitter th { border: 1px solid var(--rand); text-align: center; min-width: 40px; }
-.blatt .gitter th { background: var(--flaeche); }
+.blatt .gitter th { background: var(--flaeche); color: var(--leise); }
+.blatt .merk .gitter td, .blatt .merk .gitter th { background: var(--hg); border-left-width: 1px; border-left-color: var(--rand); border-radius: 0; padding: 6px 8px; }
 
 /* Kästchen zum Eintragen */
-.blatt .box { border: 2px solid var(--rand); width: 44px; min-width: 44px; height: 36px; }
+.blatt .box { border: 2px solid var(--strich); width: 44px; min-width: 44px; height: 36px; }
 
 /* Felder vom Lernplakat */
 .blatt .feld { width: 100%; table-layout: fixed; }
-.blatt .feld td { border: 2px solid var(--rand); text-align: center; height: 80px; vertical-align: middle; }
+.blatt .feld td { border: 2px solid var(--strich); text-align: center; height: 80px; vertical-align: middle; }
 
 /* Bilder: nie breiter als das Handy, immer auf weißem Grund (auch im Dunkelmodus) */
-.blatt img { max-width: 100%; height: auto; background: #ffffff; border-radius: 8px; padding: 4px; }
+.blatt img { max-width: 100%; height: auto; background: #ffffff; border-radius: 10px; padding: 4px; }
 
 /* Tabellen ohne Rahmen, die andere Tabellen enthalten, stellen nur zwei Spalten nebeneinander.
    Am Handy stehen diese Spalten untereinander. (Die kleinen Tabellen darin bleiben, wie sie sind.) */
@@ -128,52 +143,63 @@ body {
   .blatt table:not([class]):has(table) > tbody > tr > td { padding: 0 0 10px; }
 
   /* Tabellen am Handy etwas enger, damit sie meistens ohne Wischen hineinpassen */
-  .blatt { padding-left: 12px; padding-right: 12px; }
+  .blatt { padding-left: 14px; padding-right: 14px; }
   .blatt .gitter td, .blatt .gitter th { padding: 5px 4px; font-size: 16px; min-width: 30px; hyphens: auto; -webkit-hyphens: auto; }
   .blatt .gitter .sym { font-size: 20px; }
   .blatt .gitter [style*="nowrap"] { white-space: normal !important; }
+  .blatt .merk td { padding: 12px 12px; }
 }
 
 /* ---------- Blätter zum Ausfüllen (ausfuellen.js) ---------- */
 .blatt .kreuz {
   width: 38px; height: 38px; padding: 0; margin: 2px;
-  border: 2px solid var(--rand); border-radius: 6px;
+  border: 2px solid var(--strich); border-radius: 8px;
   background: var(--hg); color: var(--text);
-  font: bold 26px/1 "Segoe UI", Roboto, sans-serif; vertical-align: middle; cursor: pointer;
+  font: bold 24px/1 "Atkinson Hyperlegible", "Segoe UI", Roboto, sans-serif; vertical-align: middle; cursor: pointer;
 }
 .blatt td:has(> .kreuz) { cursor: pointer; }
 .blatt .eintrag {
-  width: 4.5em; min-width: 44px; height: 38px; padding: 0 4px;
-  font: inherit; font-size: 20px; font-weight: bold; text-align: center;
-  border: 2px solid var(--rand); border-radius: 6px;
+  width: 4.5em; min-width: 44px; height: 40px; padding: 0 4px;
+  font: inherit; font-size: 19px; font-weight: bold; text-align: center;
+  border: 2px solid var(--strich); border-radius: 8px;
   background: var(--hg); color: var(--text);
 }
+.blatt .eintrag:focus { border-color: var(--akzent); outline: none; box-shadow: 0 0 0 3px rgba(28, 90, 166, 0.25); }
 .blatt .box { padding: 0; }
 .blatt .box .eintrag { width: 100%; height: 100%; min-height: 36px; border: 0; border-radius: 0; }
+/* Freie Antwort (ganzer Satz): breites Textfeld, „Prüfen“ zeigt die Musterantwort darunter */
+.blatt .eintrag.frei {
+  display: block; width: 100%; height: auto; min-height: 64px; padding: 8px 10px;
+  font-size: 18px; font-weight: normal; text-align: left; resize: vertical;
+}
+.blatt .muster {
+  margin: 6px 0 10px; padding: 8px 12px; font-size: 16.5px;
+  border-left: 6px solid var(--akzent); background: var(--flaeche); border-radius: 0 10px 10px 0;
+}
 
 /* Rückmeldung nach „Prüfen“ */
-.blatt .eintrag.ist-richtig, .blatt tr.ist-richtig > td { background: rgba(30, 142, 62, 0.20); }
-.blatt .eintrag.ist-falsch,  .blatt tr.ist-falsch > td  { background: rgba(197, 34, 31, 0.22); }
-.blatt .eintrag.ist-richtig { box-shadow: inset 0 0 0 3px #1e8e3e; }
-.blatt .eintrag.ist-falsch  { box-shadow: inset 0 0 0 3px #c5221f; }
+.blatt .eintrag.ist-richtig, .blatt tr.ist-richtig > td { background: rgba(30, 142, 62, 0.16); }
+.blatt .eintrag.ist-falsch,  .blatt tr.ist-falsch > td  { background: rgba(197, 34, 31, 0.16); }
+.blatt .eintrag.ist-richtig { border-color: var(--gruen); }
+.blatt .eintrag.ist-falsch  { border-color: var(--rot); }
 
-.pruef-box { margin: 12px 0 6px; }
+.pruef-box { margin: 14px 0 6px; }
 .pruef-knopf {
   display: block; width: 100%; min-height: 54px;
   font: inherit; font-size: 20px; font-weight: bold;
-  color: var(--hg); background: var(--text);
+  color: var(--akzent-text); background: var(--akzent);
   border: 0; border-radius: 12px; cursor: pointer;
 }
-.pruef-ergebnis { margin: 8px 0 0; font-weight: bold; }
+.pruef-ergebnis { margin: 10px 0 0; padding: 10px 12px; border-radius: 10px; font-weight: bold; }
 .pruef-ergebnis:empty { display: none; }
-.pruef-ergebnis.gut { border-left: 6px solid #1e8e3e; padding-left: 10px; }
-.pruef-ergebnis.nochmal { border-left: 6px solid #c5221f; padding-left: 10px; }
+.pruef-ergebnis.gut { background: rgba(30, 142, 62, 0.14); border-left: 6px solid var(--gruen); }
+.pruef-ergebnis.nochmal { background: rgba(197, 34, 31, 0.12); border-left: 6px solid var(--rot); }
 
 /* Ampel am Ende: das passende Feld wird hervorgehoben */
-.blatt tr.ampel-aktiv > td { font-weight: bold; box-shadow: inset 0 0 0 3px var(--text); }
+.blatt tr.ampel-aktiv > td { font-weight: bold; box-shadow: inset 0 0 0 3px var(--akzent); }
 
 /* Drucken: ohne Leiste, schwarz auf weiß */
 @media print {
   .leiste { display: none; }
-  :root { --hg: #fff; --text: #000; --rand: #000; --flaeche: #ededed; }
+  :root { --hg: #fff; --text: #000; --rand: #000; --strich: #000; --flaeche: #ededed; --akzent: #000; }
 }

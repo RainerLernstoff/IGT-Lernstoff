@@ -40,6 +40,7 @@
 
   // Aufgaben finden: alles von einer Überschrift "Aufgabe …" bis zur nächsten Überschrift
   var haupt = document.querySelector(".blatt");
+  var ohnePunkte = haupt.hasAttribute("data-ohne-punkte");
   var aufgaben = [];
   haupt.querySelectorAll("h2").forEach(function (h) {
     if (!/^Aufgabe\s+\d+/.test(h.textContent.trim())) return;
@@ -47,7 +48,7 @@
     while (el && el.tagName !== "H2") { teile.push(el); el = el.nextElementSibling; }
     var felder = [], kreuze = [];
     teile.forEach(function (t) {
-      t.querySelectorAll("input.eintrag").forEach(function (x) { felder.push(x); });
+      t.querySelectorAll("input.eintrag, textarea.eintrag").forEach(function (x) { felder.push(x); });
       t.querySelectorAll("button.kreuz").forEach(function (x) { kreuze.push(x); });
     });
     if (!felder.length && !kreuze.length) return;
@@ -69,7 +70,7 @@
 
   // Felder mit "leer-lassen" müssen leer bleiben: werden geprüft, geben aber keinen Punkt (wie am Papier)
   function maxPunkte(a) {
-    var p = a.felder.filter(function (f) { return !f.classList.contains("leer-lassen"); }).length;
+    var p = a.felder.filter(function (f) { return !f.classList.contains("leer-lassen") && !f.classList.contains("frei"); }).length;
     a.kreuze.forEach(function (k) { if (soll(k) === "1") p++; });
     return p;
   }
@@ -77,6 +78,16 @@
   function pruefen(a) {
     var punkte = 0;
     a.felder.forEach(function (f) {
+      // Freie Antwort: nicht bewerten, nur die Musterantwort zum Vergleichen zeigen
+      if (f.classList.contains("frei")) {
+        if (!f.nextElementSibling || !f.nextElementSibling.classList.contains("muster")) {
+          var m = document.createElement("p");
+          m.className = "muster";
+          m.textContent = "Musterantwort: " + soll(f);
+          f.after(m);
+        }
+        return;
+      }
       var leer = f.classList.contains("leer-lassen");
       var ok = leer ? f.value.trim() === "" : gleich(f.value, soll(f));
       f.classList.toggle("ist-richtig", ok);
@@ -90,6 +101,12 @@
       if (ok) z.kreuze.forEach(function (k) { if (soll(k) === "1") punkte++; });
     });
     a.punkte = punkte;
+    if (ohnePunkte) {
+      // Blatt ohne Punkte: nur sagen, ob alles stimmt
+      a.ausgabe.textContent = a.max === 0 ? "Vergleiche mit der Musterantwort."
+        : (punkte === a.max ? "Alles richtig – super!" : "Schau bei Rot noch einmal nach.")
+          + (a.felder.some(function (f) { return f.classList.contains("frei"); }) ? " Vergleiche die Sätze mit der Musterantwort." : "");
+    } else
     a.ausgabe.textContent = punkte + " von " + a.max + " Punkten" + (punkte === a.max ? " – super!" : " – schau bei Rot noch einmal nach.");
     a.ausgabe.className = "pruef-ergebnis " + (punkte === a.max ? "gut" : "nochmal");
     gesamtZeigen();

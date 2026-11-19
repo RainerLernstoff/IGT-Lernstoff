@@ -14,21 +14,32 @@
   var titel = document.getElementById("titel");
   var zurueck = document.getElementById("zurueck");
 
+  // Farbstreifen links am Knopf: der Reihe nach die Leitungs-Kennfarben
+  // (KW grün, WW orange, Z violett, VL rot, RL blau, G gelb, SW braun, AL olivgrün)
+  var KENNFARBEN = ["#2e9b4f", "#e07a1f", "#7b4bb0", "#c8322b", "#2f6fc0", "#e8c21a", "#8a5a2b", "#6b7a2a"];
+
   // Einen großen Knopf bauen (eigentlich ein Link, darum <a>)
-  function knopf(name, info, ziel) {
+  function knopf(name, info, ziel, nr) {
     var a = document.createElement("a");
     a.className = "knopf";
     a.href = ziel;
+    var streifen = document.createElement("span");
+    streifen.className = "knopf-streifen";
+    streifen.style.background = KENNFARBEN[nr % KENNFARBEN.length];
+    a.appendChild(streifen);
+    var text = document.createElement("span");
+    text.className = "knopf-text";
     var gross = document.createElement("span");
     gross.className = "knopf-name";
     gross.textContent = name;
-    a.appendChild(gross);
+    text.appendChild(gross);
     if (info) {
       var klein = document.createElement("span");
       klein.className = "knopf-info";
       klein.textContent = info;
-      a.appendChild(klein);
+      text.appendChild(klein);
     }
+    a.appendChild(text);
     return a;
   }
 
@@ -50,19 +61,19 @@
     if (thema) {
       ueberschrift = thema.name;
       zurueckZiel = "#/" + fach.id + "/" + jahr.id;
-      thema.teile.forEach(function (t) { knoepfe.push(knopf(t.name, t.info, t.datei)); });
+      thema.teile.forEach(function (t, i) { knoepfe.push(knopf(t.name, t.info, t.datei, i)); });
     } else if (jahr) {
       ueberschrift = fach.name + " · " + jahr.name;
       zurueckZiel = "#/" + fach.id;
-      jahr.themen.forEach(function (t) { knoepfe.push(knopf(t.name, t.info, "#/" + fach.id + "/" + jahr.id + "/" + t.id)); });
+      jahr.themen.forEach(function (t, i) { knoepfe.push(knopf(t.name, t.info, "#/" + fach.id + "/" + jahr.id + "/" + t.id, i)); });
     } else if (fach) {
       ueberschrift = fach.name;
       zurueckZiel = "#/";
-      fach.lehrjahre.forEach(function (j) { knoepfe.push(knopf(j.name, null, "#/" + fach.id + "/" + j.id)); });
+      fach.lehrjahre.forEach(function (j, i) { knoepfe.push(knopf(j.name, null, "#/" + fach.id + "/" + j.id, i)); });
     } else {
       ueberschrift = "IGT: Lernstoff";
       zurueckZiel = null;
-      INHALTE.faecher.forEach(function (f) { knoepfe.push(knopf(f.name, f.info, "#/" + f.id)); });
+      INHALTE.faecher.forEach(function (f, i) { knoepfe.push(knopf(f.name, f.info, "#/" + f.id, i + 4)); });   // Fächer starten mit Blau
     }
 
     // Auf der Startseite steht der Name im Logo-Stil: „IGT_“ klein, „Lernstoff“ groß
@@ -77,6 +88,10 @@
 
     haupt.innerHTML = "";
     if (!zurueckZiel) {
+      var gruss = document.createElement("p");
+      gruss.className = "gruss";
+      gruss.textContent = "Was lernst du heute?";
+      haupt.appendChild(gruss);
       var hallo = document.createElement("p");
       hallo.className = "hinweis";
       hallo.textContent = "Wähle dein Fach.";

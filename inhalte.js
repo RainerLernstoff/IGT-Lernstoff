@@ -20,6 +20,21 @@ const INHALTE = {
       info: "Angewandte Installationstechnik",
       lehrjahre: [
         {
+          id: "jg1",
+          name: "1. Lehrjahr",
+          themen: [
+            {
+              id: "01-leitungsarten",
+              name: "01 Leitungsarten und Kennzeichnung",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt",  info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/01-leitungsarten/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/01-leitungsarten/selbstcheck.html#01" }
+              ]
+            }
+          ]
+        },
+        {
           id: "jg3",
           name: "3. Lehrjahr",
           themen: [
