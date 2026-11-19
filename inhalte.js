@@ -35,9 +35,10 @@ const INHALTE = {
             {
               id: "02-laengenberechnung",
               name: "02 Längenberechnung",
-              info: "Arbeitsblatt",
+              info: "Arbeitsblatt, Selbstcheck",
               teile: [
-                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/02-laengenberechnung/arbeitsblatt.html" }
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/02-laengenberechnung/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/02-laengenberechnung/selbstcheck.html#02" }
               ]
             }
           ]
