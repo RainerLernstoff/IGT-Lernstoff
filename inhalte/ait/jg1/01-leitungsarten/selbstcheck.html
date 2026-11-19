@@ -143,6 +143,19 @@ const THEMEN = [
       { s: 2, f: "Im Heizraum: 2 graue Rohre ohne Farbe am Kessel. Rohr X hat 68 °C, Rohr Y hat 47 °C. Welches ist der Vorlauf?", a: ["Rohr X (68 °C)", "Rohr Y (47 °C)", "Das kann man nicht sagen."], r: 0, e: "Der Vorlauf geht heiß vom Kessel zu den Heizkörpern. Der Rücklauf kommt kühler zurück. Also ist das heißere Rohr X der Vorlauf.", n: "AB 01, Infokasten D" },
       { s: 3, f: "Ein Kunde fragt: „Warum ist das Warmwasser im Speicher 60 °C heiß? 40 °C würden doch reichen.“ Was sagst du?", a: ["Damit das Wasser schneller fließt.", "Bei 60 °C sterben die Legionellen (Bakterien).", "Damit die Rohre nicht rosten."], r: 1, e: "Legionellen mögen lauwarmes Wasser (ca. 25 bis 45 °C). Bei hoher Temperatur sterben sie. Darum hat der Speicher ca. 60 °C.", n: "AB 01, Infokasten D (Mehr wissen)" }
     ]
+  },
+  {
+    nr: "02", name: "Längenberechnung", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Wie viele mm hat 1 m?", a: ["10 mm", "100 mm", "1000 mm", "10 000 mm"], r: 2, e: "1 m = 10 dm = 100 cm = 1000 mm.", n: "AB 02, Infokasten A" },
+      { s: 1, f: "3,2 m = ? mm", a: ["32 mm", "320 mm", "3200 mm", "32 000 mm"], r: 2, e: "m → mm: 3 Stellen. Das Komma geht 3 Stellen nach rechts. Fehlende Stellen füllst du mit 0: 3,2 m = 3200 mm.", n: "AB 02, Infokasten B" },
+      { s: 2, f: "45 cm = ? m", a: ["4,5 m", "0,45 m", "0,045 m", "450 m"], r: 1, e: "cm → m: 2 Stellen. Das Komma geht nach links. Vorne kommt eine 0 dazu: 45 cm = 0,45 m.", n: "AB 02, Infokasten B" },
+      { s: 2, f: "Wie viele mm sind ¼″?", a: ["6,35 mm", "25,4 mm", "0,25 mm", "101,6 mm"], r: 0, e: "¼″ = 0,25″. Rechne 0,25 · 25,4 mm = 6,35 mm.", n: "AB 02, Infokasten C" },
+      { s: 2, f: "Eine Leitung hat 3 Stücke: 1,5 m, 60 cm und 400 mm. Wie lang ist sie in mm?", a: ["461 mm", "2500 mm", "1960 mm", "2,5 mm"], r: 1, e: "Zuerst alles in mm: 1500 mm + 600 mm + 400 mm = 2500 mm.", n: "AB 02, Infokasten D" },
+      { s: 2, f: "Die Leitung ist 17 m lang. Eine Rohrstange ist 5 m lang. Wie viele Stangen bestellst du?", a: ["3 Stangen", "4 Stangen", "17 Stangen"], r: 1, e: "17 m : 5 m = 3,4. Du kannst nur ganze Stangen kaufen, darum immer aufrunden: 4 Stangen.", n: "AB 02, Infokasten E" },
+      { s: 2, f: "Zwei Höhenkoten: +1,30 und −0,70. Wie groß ist der Höhenunterschied?", a: ["0,60 m", "2,00 m", "1,30 m"], r: 1, e: "Eine Kote ist plus, eine minus. Dann zählst du zusammen: 1,30 + 0,70 = 2,00 m.", n: "AB 02, Infokasten F" },
+      { s: 2, f: "Ein Rohr hat d = 50 mm. Wie groß ist der Umfang? (π = 3,14)", a: ["15,7 mm", "157 mm", "53,14 mm", "1570 mm"], r: 1, e: "U = d · π = 50 mm · 3,14 = 157 mm.", n: "AB 02, Infokasten G" }
+    ]
   }
 ];
 
