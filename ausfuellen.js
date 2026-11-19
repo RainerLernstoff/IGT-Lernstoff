@@ -16,13 +16,20 @@
   }
 
   // Eingaben vergleichbar machen: Groß/klein egal, Leerzeichen egal, "3,0" = "3", "-" = "–"
+  // Zahl mit Einheit: "1,50 m" = "1,5 m". Steht die Einheit schon im Blatt, reicht auch nur die Zahl ("1200" = "1200 mm").
+  var EINHEIT = /^(\d+(?:,\d+)?)(km|m|dm|cm|mm)?$/;
   function gleich(eingabe, richtig) {
     function sauber(t) {
       t = String(t).trim().toLowerCase().replace(/\s+/g, "").replace(/[-‐‑–—]/g, "–").replace(/\./g, "");
-      if (/^\d+(,\d+)?$/.test(t)) t = String(parseFloat(t.replace(",", ".")));
+      var m = t.match(EINHEIT);
+      if (m) t = String(parseFloat(m[1].replace(",", "."))) + (m[2] || "");
       return t;
     }
-    return sauber(eingabe) !== "" && sauber(eingabe) === sauber(richtig);
+    var e = sauber(eingabe), r = sauber(richtig);
+    if (e === "") return false;
+    if (e === r) return true;
+    var re = r.match(/^(\d+(?:\.\d+)?)(km|m|dm|cm|mm)$/);
+    return !!re && e === re[1];
   }
 
   // Kästchen antippen (auch der Text daneben in derselben Zelle zählt)

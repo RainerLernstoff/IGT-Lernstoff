@@ -31,6 +31,14 @@ const INHALTE = {
                 { name: "Arbeitsblatt",  info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/01-leitungsarten/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/01-leitungsarten/selbstcheck.html#01" }
               ]
+            },
+            {
+              id: "02-laengenberechnung",
+              name: "02 Längenberechnung",
+              info: "Arbeitsblatt",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/02-laengenberechnung/arbeitsblatt.html" }
+              ]
             }
           ]
         },
