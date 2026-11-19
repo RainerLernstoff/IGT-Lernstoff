@@ -109,6 +109,23 @@
 
   // Offline-Speicher einschalten (geht nur über http/https, nicht als Datei)
   if ("serviceWorker" in navigator && location.protocol !== "file:") {
-    navigator.serviceWorker.register("sw.js").catch(function () { /* ohne Offline geht es auch */ });
+    // Gab es schon eine alte Fassung? Nur dann ist ein Wechsel ein echtes Update (nicht der erste Besuch).
+    var hatteAlte = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.register("sw.js").then(function (reg) {
+      // Beim Zurückholen der App (sie war im Hintergrund) nach einer neuen Fassung fragen
+      document.addEventListener("visibilitychange", function () {
+        if (document.visibilityState === "visible") reg.update().catch(function () {});
+      });
+    }).catch(function () { /* ohne Offline geht es auch */ });
+
+    // Neue Fassung ist fertig geladen → Hinweis unten anzeigen, Tippen lädt neu
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (!hatteAlte || document.getElementById("update-hinweis")) return;
+      var k = document.createElement("button");
+      k.type = "button"; k.id = "update-hinweis"; k.className = "update-hinweis";
+      k.textContent = "Neue Version da – tippen zum Laden";
+      k.addEventListener("click", function () { location.reload(); });
+      document.body.appendChild(k);
+    });
   }
 })();
