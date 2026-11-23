@@ -156,6 +156,58 @@ const THEMEN = [
       { s: 2, f: "Zwei Höhenkoten: +1,30 und −0,70. Wie groß ist der Höhenunterschied?", a: ["0,60 m", "2,00 m", "1,30 m"], r: 1, e: "Eine Kote ist plus, eine minus. Dann zählst du zusammen: 1,30 + 0,70 = 2,00 m.", n: "AB 02, Infokasten F" },
       { s: 2, f: "Ein Rohr hat d = 50 mm. Wie groß ist der Umfang? (π = 3,14)", a: ["15,7 mm", "157 mm", "53,14 mm", "1570 mm"], r: 1, e: "U = d · π = 50 mm · 3,14 = 157 mm.", n: "AB 02, Infokasten G" }
     ]
+  },
+  {
+    nr: "03", name: "Rohrdurchmesser, Dämmung, Rohrabstände", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Ein Rohr hat 35 x 1,5. Wie groß ist der Innendurchmesser d?", a: ["32 mm", "33,5 mm", "36,5 mm", "38 mm"], r: 0, e: "Die Wand ist zweimal im Durchmesser: links und rechts. d = D − 2 · s = 35 mm − 2 · 1,5 mm = 35 mm − 3 mm = 32 mm.", n: "AB 03, Infokasten A" },
+      { s: 2, f: "Auf dem Lieferschein steht: 12 lfm CU-Rohr 22 x 1, R290. Was kommt auf die Baustelle?", a: ["12 m weiches Kupferrohr im Ring", "12 m hartes Kupferrohr in Stangen", "12 Stück Kupferrohr, je 1 m"], r: 1, e: "lfm = Laufmeter, CU = Kupfer. R290 ist die Härte: R290 = hart, in Stangen. (R220 = weich, im Ring. R250 = halbhart.)", n: "AB 03, Infokasten A2" },
+      { s: 2, f: "Rohr A hat PN 6, Rohr B hat PN 16 (gleicher Außendurchmesser). Welches Rohr hat die dickere Wand?", a: ["Rohr A (PN 6)", "Rohr B (PN 16)", "Beide gleich"], r: 1, e: "PN ist der Nenndruck: der höchste Druck in bar, den das Rohr aushält. Je höher der Nenndruck, desto dicker ist die Wand.", n: "AB 03, Infokasten B" },
+      { s: 1, f: "Wozu dämmst du ein Kaltwasserrohr?", a: ["Damit das Wasser warm wird.", "Damit das Wasser kalt bleibt und kein Schwitzwasser entsteht.", "Damit das Rohr schwerer wird."], r: 1, e: "Die Dämmung hält das Wasser kalt (unter 25 °C). So vermehren sich keine Keime. Außerdem bilden sich am Rohr keine Wassertropfen (Schwitzwasser).", n: "AB 03, Infokasten C" },
+      { s: 2, f: "Ein Rohr hat D = 22 mm. Die Dämmung ist Iso = 20 mm dick. Wie groß ist D ges (Außendurchmesser mit Dämmung)?", a: ["22 mm", "42 mm", "62 mm"], r: 2, e: "Die Dämmung ist zweimal im Durchmesser: links und rechts. D ges = D + 2 · Iso = 22 mm + 2 · 20 mm = 22 mm + 40 mm = 62 mm.", n: "AB 03, Infokasten C" },
+      { s: 2, f: "Zwei Rohre liegen nebeneinander: D1 = 18 mm, D2 = 28 mm, Abstand A = 40 mm. Wie groß ist das Mitte-Mitte-Maß (M-M)?", a: ["46 mm", "63 mm", "86 mm"], r: 1, e: "Von der Mitte bis zum Rand ist es nur ein halber Durchmesser. M-M = D1 : 2 + A + D2 : 2 = 9 mm + 40 mm + 14 mm = 63 mm.", n: "AB 03, Infokasten D" },
+      { s: 2, f: "Eine Konsole trägt 2 gedämmte Rohre. Wandabstand 30 mm, D ges 1 = 40 mm, A = 50 mm, D ges 2 = 60 mm, Überlänge 20 mm. Wie lang ist die Konsole?", a: ["150 mm", "180 mm", "200 mm"], r: 2, e: "L = Wandabstand + D ges 1 + A + D ges 2 + Überlänge = 30 + 40 + 50 + 60 + 20 = 200 mm. Die Überlänge nicht vergessen!", n: "AB 03, Infokasten E" },
+      { s: 2, f: "In einem Mauerschlitz liegen KW (D ges 40 mm) und WW (D ges 50 mm). Abstand A = 30 mm, Rand R = 20 mm. Wie breit ist der Schlitz?", a: ["120 mm", "140 mm", "160 mm"], r: 2, e: "Es gibt zwei Ränder: links und rechts. B = R + D ges KW + A + D ges WW + R = 20 + 40 + 30 + 50 + 20 = 160 mm.", n: "AB 03, Infokasten F" }
+    ]
+  },
+  {
+    nr: "04", name: "Rohrwerkstoffe", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Welcher Werkstoff ist ein Kunststoff?", a: ["Edelstahl", "Kupfer", "PP (Polypropylen)", "verzinkter Stahl"], r: 2, e: "Rohre sind aus Metall oder aus Kunststoff. Kunststoffe sind PE, PP und das Mehrschichtverbundrohr. Stahl, Edelstahl und Kupfer sind Metalle.", n: "AB 04, Infokasten A" },
+      { s: 1, f: "Ein Rohr rostet nicht. Welche Eigenschaft ist das?", a: ["Korrosionsbeständigkeit", "thermische Festigkeit", "UV-Beständigkeit"], r: 0, e: "Korrosion heißt Rost. Korrosionsbeständig heißt: Das Rohr rostet nicht.", n: "AB 04, Infokasten B" },
+      { s: 1, f: "Was heißt „spröde“?", a: ["Das Material bricht leicht, wie Glas.", "Das Material wird weich.", "Das Material rostet."], r: 0, e: "Spröde heißt: Das Material bricht leicht, wie Glas. Kunststoffrohre werden in der Sonne spröde.", n: "AB 04, Infokasten B" },
+      { s: 2, f: "Ein einfaches PE-Rohr kommt in die Heizung. Was ist das Problem?", a: ["Luft kommt durch die Rohrwand. Andere Teile der Heizung rosten.", "Das Rohr schmilzt sofort.", "Das Rohr ist zu schwer."], r: 0, e: "PE ist nicht dicht gegen Luft (Sauerstoffdiffusion). Die Luft lässt Teile der Heizung rosten. Der Rost wird zu Schlamm.", n: "AB 04, Infokasten B und E" },
+      { s: 2, f: "Drei Rohre, je 10 m lang. Das Wasser wird 50 Grad wärmer. Welches Rohr wird ca. 100 mm länger?", a: ["Stahlrohr", "Kupferrohr", "Kunststoffrohr (PE)"], r: 2, e: "Stahl wird ca. 6 mm länger, Kupfer ca. 8,5 mm, PE ca. 100 mm (= 10 cm!). Kunststoff dehnt sich bei Wärme viel mehr aus.", n: "AB 04, Infokasten D" },
+      { s: 2, f: "Du verlegst die Wasserleitung in der Erde vom Gehsteig zum Haus (Hausanschluss). Welches Rohr nimmst du meistens?", a: ["PE", "Edelstahl", "verzinkter Stahl"], r: 0, e: "PE rostet nicht, ist leicht und einfach zu verbinden. Darum nimmt man es für den Hausanschluss.", n: "AB 04, Infokasten E" },
+      { s: 2, f: "Welche Rohre nimmt man oft für Gas?", a: ["Stahl oder Kupfer", "PE", "PP"], r: 0, e: "Für Gas nimmt man Stahl oder Kupfer. PE und PP sind für Wasser und Abwasser.", n: "AB 04, Infokasten E" },
+      { s: 3, f: "Wasser fließt von verzinktem Stahl zu Kupfer. Ist das gut?", a: ["Gut: Zuerst kommt das unedle, dann das edle Metall.", "Schlecht: Der Stahl löst sich auf.", "Das ist egal."], r: 0, e: "Verzinkter Stahl ist unedler als Kupfer. In Fließrichtung muss das unedle Metall zuerst kommen, dann das edle. Umgekehrt (Kupfer → Stahl) löst sich der Stahl auf.", n: "AB 04, Mehr wissen (Mischinstallation)" }
+    ]
+  },
+  {
+    nr: "05", name: "Meterriss, Steigung und Gefälle", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Wie hoch über dem fertigen Fußboden ist der Meterriss?", a: ["10 cm", "50 cm", "100 cm", "150 cm"], r: 2, e: "Der Meterriss ist genau 1 Meter (= 100 cm) über der Oberkante vom fertigen Fußboden.", n: "AB 05, Infokasten A" },
+      { s: 1, f: "Ein Anschluss ist laut Plan 130 cm über dem fertigen Fußboden. Wie misst du vom Meterriss?", a: ["+30 cm", "−30 cm", "+130 cm"], r: 0, e: "Maß vom Meterriss = Höhe − 100 cm = 130 − 100 = +30 cm. Plus heißt: über dem Meterriss.", n: "AB 05, Infokasten B" },
+      { s: 2, f: "Der WC-Anschluss ist 25 cm über dem fertigen Fußboden. Wo misst du?", a: ["25 cm über dem Meterriss", "75 cm unter dem Meterriss", "75 cm über dem Meterriss"], r: 1, e: "25 − 100 = −75 cm. Rechne groß minus klein (100 − 25 = 75) und schreib ein Minus davor. Minus heißt: unter dem Meterriss.", n: "AB 05, Infokasten B" },
+      { s: 2, f: "Du misst −20 cm vom Meterriss. Wie hoch über dem fertigen Fußboden ist das?", a: ["20 cm", "80 cm", "120 cm"], r: 1, e: "Rückwärts: Höhe über Fußboden = 100 cm + Maß vom Meterriss = 100 cm − 20 cm = 80 cm.", n: "AB 05, Infokasten B" },
+      { s: 2, f: "Maßstab 1:50. Am Plan sind es 6 cm. Wie lang ist das in echt?", a: ["56 cm", "300 cm", "0,12 cm"], r: 1, e: "Echtmaß gesucht: EM = ZM · VZ = 6 cm · 50 = 300 cm (= 3 m).", n: "AB 05, Infokasten C" },
+      { s: 1, f: "Eine Leitung ist 4 m lang und hat 2 % Gefälle. Wie viel geht sie nach unten?", a: ["2 cm", "8 cm", "80 cm"], r: 1, e: "2 % Gefälle heißt 2 cm pro 1 m. Bei 4 m Länge: 4 · 2 cm = 8 cm.", n: "AB 05, Infokasten D" },
+      { s: 2, f: "L = 5 m, Δh = 10 cm. Wie groß ist das Gefälle n?", a: ["2 %", "20 %", "200 %"], r: 0, e: "Zuerst alles in cm: L = 500 cm. Dann n = Δh : L · 100 = 10 : 500 · 100 = 2 %. Wer L in m einsetzt, bekommt 200 % (falsch).", n: "AB 05, Infokasten E" },
+      { s: 2, f: "L = 7 m, n = 2 %. Wie groß ist der Höhenunterschied Δh?", a: ["1,4 cm", "14 cm", "140 cm"], r: 1, e: "L = 700 cm. Δh = n · L : 100 = 2 · 700 : 100 = 14 cm. Kontrolle: 2 cm pro m, 7 m · 2 cm = 14 cm.", n: "AB 05, Infokasten F" }
+    ]
+  },
+  {
+    nr: "06", name: "Sinnbilder, Hausanschluss", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Was zeigt ein Sinnbild im Plan?", a: ["wofür ein Bauteil da ist", "wie das Bauteil genau aussieht", "welche Farbe das Bauteil hat"], r: 0, e: "Ein Sinnbild ist eine einfache Zeichnung. Es zeigt, wofür ein Bauteil da ist, nicht wie es ausschaut.", n: "AB 06, Infokasten A" },
+      { s: 1, f: "Woran erkennst du im Sinnbild einen Kugelhahn?", a: ["senkrechter Strich in der Mitte", "offener Kreis in der Mitte", "schräge Spindel mit Griff"], r: 1, e: "Merke: Kreis = Kugelhahn (die Kugel). Strich = Schieber. Schräge Spindel = Schrägsitzventil.", n: "AB 06, Infokasten B" },
+      { s: 2, f: "Du siehst zwei Dreiecke mit einem senkrechten Strich dazwischen. Welche Armatur ist das?", a: ["Schieber", "Kugelhahn", "Schrägsitzventil"], r: 0, e: "Strich = Schieber. Alle Absperrarmaturen haben die Grundform mit den zwei Dreiecken. Das kleine Zeichen in der Mitte sagt, welche es ist.", n: "AB 06, Infokasten B" },
+      { s: 2, f: "Im Plan siehst du ein Rechteck mit „m³“. Was ist das?", a: ["Wasserzähler", "Druckminderer", "Rückflussverhinderer"], r: 0, e: "Rechteck mit m³ = Wasserzähler. Er misst, wie viel Wasser durchfließt.", n: "AB 06, Infokasten C" },
+      { s: 2, f: "Was verhindert, dass Wasser zurück in die Leitung auf der Straße fließt?", a: ["Druckminderer", "Rückflussverhinderer", "Wasserzähler"], r: 1, e: "Der Rückflussverhinderer lässt das Wasser nur in eine Richtung fließen. So bleibt das Trinkwasser für alle sauber. Sinnbild: großer gefüllter Punkt.", n: "AB 06, Infokasten C" },
+      { s: 2, f: "Wo sitzt der Druckminderer und was macht er?", a: ["Vor dem Wasserzähler. Er macht den Druck größer.", "Nach dem Wasserzähler. Er macht den Wasserdruck im Haus kleiner.", "Nach dem Wasserzähler. Er misst das Wasser."], r: 1, e: "Der Druckminderer sitzt nach dem Wasserzähler und macht den Wasserdruck im Haus kleiner.", n: "AB 06, Infokasten C" },
+      { s: 2, f: "Das Wasser kommt von der Straße ins Haus. Was kommt gleich nach der Hauseinführung?", a: ["Anbohrschelle", "Übergangsstück", "Wasserzähler"], r: 1, e: "Reihenfolge: Versorgungsleitung → Anbohrschelle → PE-Leitung → Hauseinführung → Übergangsstück → Absperrarmatur → Wasserzähler → Absperrarmatur.", n: "AB 06, Infokasten D" },
+      { s: 2, f: "Wozu gibt es vor und nach dem Wasserzähler je eine Absperrarmatur?", a: ["Man kann den Wasserzähler tauschen, ohne dass viel Wasser ausläuft.", "Damit der Druck kleiner wird.", "Damit das Wasser sauber bleibt."], r: 0, e: "Mit den zwei Absperrarmaturen sperrt man den Wasserzähler ab und kann ihn tauschen, ohne dass viel Wasser ausläuft.", n: "AB 06, Infokasten D" }
+    ]
   }
 ];
 
