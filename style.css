@@ -120,6 +120,9 @@ body {
 .blatt .gitter { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .blatt .gitter td, .blatt .gitter th { border: 1px solid var(--rand); text-align: center; min-width: 40px; }
 .blatt .gitter th { background: var(--flaeche); color: var(--leise); }
+/* Feste Breite: Eine breite Tabelle im Infokasten (wischbar) darf den Kasten nicht über den Rand schieben */
+.blatt table.merk { table-layout: fixed; }
+.blatt .merk table:not([class]) td { background: none; border-left: 0; border-radius: 0; padding: 0 8px 0 0; }
 .blatt .merk .gitter td, .blatt .merk .gitter th { background: var(--hg); border-left-width: 1px; border-left-color: var(--rand); border-radius: 0; padding: 6px 8px; }
 
 /* Kästchen zum Eintragen */
@@ -141,6 +144,16 @@ body {
   .blatt table:not([class]):has(table) > tbody > tr,
   .blatt table:not([class]):has(table) > tbody > tr > td { display: block; width: auto; }
   .blatt table:not([class]):has(table) > tbody > tr > td { padding: 0 0 10px; }
+  /* Infokasten mit zwei Spalten (Text und Bild oder Text und Text, z. B. AIT JG1 Thema 03, 04, 06): am Handy untereinander */
+  .blatt .merk table:not([class]),
+  .blatt .merk table:not([class]) > tbody,
+  .blatt .merk table:not([class]) > tbody > tr,
+  .blatt .merk table:not([class]) > tbody > tr > td { display: block; width: auto; }
+  .blatt .merk table:not([class]) > tbody > tr > td { padding: 0 0 10px; }
+  .blatt .merk table:not([class]):has(img) > tbody > tr > td { text-align: center; }
+  .blatt .merk table:not([class]):has(img) > tbody > tr > td:first-child { text-align: left; }
+  /* Fotos in Tabellen nicht zu einem Streifen quetschen (Foto erkennen, Thema 06) */
+  .blatt .gitter td img { min-width: 64px; }
 
   /* Tabellen am Handy etwas enger, damit sie meistens ohne Wischen hineinpassen */
   .blatt { padding-left: 14px; padding-right: 14px; }

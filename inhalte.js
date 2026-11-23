@@ -40,6 +40,42 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/02-laengenberechnung/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/02-laengenberechnung/selbstcheck.html#02" }
               ]
+            },
+            {
+              id: "03-rohrdurchmesser",
+              name: "03 Rohrdurchmesser, Dämmung, Rohrabstände",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/03-rohrdurchmesser/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/03-rohrdurchmesser/selbstcheck.html#03" }
+              ]
+            },
+            {
+              id: "04-rohrwerkstoffe",
+              name: "04 Rohrwerkstoffe",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/04-rohrwerkstoffe/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/04-rohrwerkstoffe/selbstcheck.html#04" }
+              ]
+            },
+            {
+              id: "05-meterriss-gefaelle",
+              name: "05 Meterriss, Steigung und Gefälle",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/05-meterriss-gefaelle/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/05-meterriss-gefaelle/selbstcheck.html#05" }
+              ]
+            },
+            {
+              id: "06-sinnbilder-hausanschluss",
+              name: "06 Sinnbilder, Hausanschluss",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/06-sinnbilder-hausanschluss/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/06-sinnbilder-hausanschluss/selbstcheck.html#06" }
+              ]
             }
           ]
         },
