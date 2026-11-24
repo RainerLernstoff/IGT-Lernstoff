@@ -247,6 +247,45 @@ const THEMEN = [
       { s: 2, f: "Warum kommt ein einfaches PE-Rohr nicht in die Heizung?", a: ["Sauerstoff wandert durch die Rohrwand, Metallteile in der Heizung rosten.", "PE wird schon bei 30 °C weich.", "PE ist zu schwer."], r: 0, e: "Sauerstoff kann durch die Rohrwand von PE wandern (Diffusion). Dann rosten Heizkörper und Kessel.", n: "AB 09, Infokasten F" },
       { s: 2, f: "Wie viel Wärme verträgt PVC höchstens?", a: ["60 °C", "120 °C", "200 °C"], r: 0, e: "PVC verträgt höchstens 60 °C. Darum nicht für Warmwasser und Heizung. 120 °C verträgt PEX.", n: "AB 09, Infokasten H" }
     ]
+  },
+  {
+    nr: "10", name: "Volumen", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "1 m³ = ? Liter", a: ["100 l", "1000 l", "10 l"], r: 1, e: "Bei Volumen ist der Schritt immer 1000. 1 m³ = 1000 dm³ = 1000 Liter.", n: "AB 10, Infokasten A" },
+      { s: 2, f: "3500 cm³ = ? Liter", a: ["35 l", "3,5 l", "0,35 l"], r: 1, e: "1 l = 1 dm³ = 1000 cm³. Kleine Einheit → große Einheit: durch 1000. 3500 cm³ : 1000 = 3,5 l.", n: "AB 10, Infokasten A" },
+      { s: 1, f: "1 Liter ist genau so viel wie …", a: ["10 dm³", "1000 dm³", "1 dm³"], r: 2, e: "1 Liter ist genau 1 dm³.", n: "AB 10, Infokasten A" },
+      { s: 2, f: "Ein Behälter ist 10 dm lang, 4 dm breit und 5 dm hoch. Wie viele Liter passen hinein?", a: ["200 l", "19 l", "2000 l"], r: 0, e: "V = a · b · h = 10 dm · 4 dm · 5 dm = 200 dm³ = 200 l. 19 wäre zusammengezählt statt mal genommen.", n: "AB 10, Infokasten B" },
+      { s: 2, f: "Ein Spülkasten ist innen 30 cm × 10 cm × 20 cm. Wie viele Liter passen hinein?", a: ["60 l", "6 l", "6000 l"], r: 1, e: "Zuerst in dm: 3 dm · 1 dm · 2 dm = 6 dm³ = 6 l. Wer in cm rechnet, bekommt 6000 cm³ – das sind auch 6 l.", n: "AB 10, Infokasten B" },
+      { s: 2, f: "Wie rechnest du das Volumen von einem Speicher (Zylinder)?", a: ["Umfang mal Höhe", "Durchmesser mal Höhe", "Kreisfläche mal Höhe"], r: 2, e: "Zylinder = Kreisfläche mal Höhe: V = A · h mit A = d · d · 3,14 : 4.", n: "AB 10, Infokasten C" },
+      { s: 2, f: "Mit welchem Durchmesser rechnest du den Wasserinhalt vom Rohr?", a: ["Außendurchmesser D", "Innendurchmesser d", "Wandstärke s"], r: 1, e: "Das Wasser ist innen im Rohr. Darum rechnest du mit dem Innendurchmesser d = D − 2 · s.", n: "AB 10, Infokasten E" },
+      { s: 2, f: "Gewinderohr DN 20 hat 0,37 l/m. Wie viel Wasser ist in 10 m Rohr?", a: ["3,7 l", "37 l", "0,37 l"], r: 0, e: "V = Länge in m · Wasserinhalt = 10 m · 0,37 l/m = 3,7 l.", n: "AB 10, Infokasten F" }
+    ]
+  },
+  {
+    nr: "11", name: "Edelstahl", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Woran erkennst du das Edelstahl-Systemrohr?", a: ["Rote Beschriftung", "Grüne Linie am Rohr", "Cremeweißer Mantel"], r: 1, e: "Edelstahl erkennst du an der grünen Linie. Rot = C-Stahl außen verzinkt, cremeweiß = C-Stahl mit Kunststoffmantel.", n: "AB 11, Infokasten A" },
+      { s: 1, f: "Warum rostet Edelstahl nicht?", a: ["Weil er verzinkt ist.", "Weil er einen Kunststoffmantel hat.", "Chrom und Molybdän schützen ihn vor Korrosion."], r: 2, e: "Die Metalle Chrom und Molybdän im Edelstahl schützen vor Korrosion (Rost).", n: "AB 11, Infokasten A" },
+      { s: 2, f: "Wo ist C-Stahl NICHT erlaubt?", a: ["In der Trinkwasserleitung (offene Anlage)", "Im Heizungsvorlauf", "Im Rücklauf der Fußbodenheizung"], r: 0, e: "In offenen Anlagen kommt immer neuer Sauerstoff, C-Stahl würde rosten. In der Heizung (geschlossen) ist er erlaubt.", n: "AB 11, Infokasten B" },
+      { s: 2, f: "Edelstahl kommt an eine alte verzinkte Leitung. Was baust du dazwischen?", a: ["Nichts, das passt.", "Ein Distanzstück aus Kunststoff oder Buntmetall, mindestens 50 mm", "Ein Stück C-Stahl"], r: 1, e: "Sonst entsteht Kontaktkorrosion: Der verzinkte Stahl rostet weg. Dagegen hilft ein Distanzstück (mind. 50 mm) oder eine Armatur.", n: "AB 11, Infokasten B" },
+      { s: 1, f: "Ein Pressfitting hat einen roten Pressindikator. Was heißt das?", a: ["Er ist schon gepresst.", "Er ist aus C-Stahl.", "Er ist aus Edelstahl."], r: 1, e: "Roter Indikator = C-Stahl. Blauer Indikator = Edelstahl.", n: "AB 11, Infokasten C" },
+      { s: 2, f: "Welchen Dichtring brauchst du für eine Gasleitung?", a: ["Schwarz", "Blau", "Gelb"], r: 2, e: "Wasser = schwarz. Solar und Öl = blau. Gas = gelb.", n: "AB 11, Infokasten D" },
+      { s: 2, f: "Womit darfst du ein Edelstahlrohr NICHT abschneiden?", a: ["Mit der Trennscheibe (Flex)", "Mit dem Rohrschneider", "Mit einer feinzahnigen Handsäge"], r: 0, e: "Die Flex macht Hitze. Die Hitze verändert den Stahl, dort kann er später rosten.", n: "AB 11, Infokasten E" },
+      { s: 2, f: "Warum musst du das Rohr nach dem Ablängen entgraten?", a: ["Damit es schöner aussieht.", "Sonst macht die scharfe Kante den Dichtring kaputt.", "Damit das Rohr nicht rostet."], r: 1, e: "Entgraten heißt: die scharfe Kante innen und außen wegmachen. Sonst wird der Dichtring kaputt.", n: "AB 11, Infokasten E" }
+    ]
+  },
+  {
+    nr: "12", name: "Kupfer", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Wie viel Kupfer steckt ungefähr im Gestein (Kupfererz)?", a: ["Ca. 1 %", "Ca. 50 %", "Ca. 90 %"], r: 0, e: "Im Gestein ist nur etwa 1 % Kupfer: In 100 kg Gestein ist 1 kg Kupfer. Darum Kupfer recyceln!", n: "AB 12, Infokasten A" },
+      { s: 1, f: "Auf dem Kupferrohr steht R220. Was heißt das?", a: ["Halbhart, Stange", "Weich, im Ring", "Ziehhart, Stange"], r: 1, e: "R220 = weich (Ring). R250 = halbhart, R290 = ziehhart (beide Stange, 5 m).", n: "AB 12, Infokasten C" },
+      { s: 2, f: "Darf man ein Kupferrohr R290 biegen?", a: ["Ja, ganz leicht.", "Ja, wenn man es warm macht.", "Nein, es ist ziehhart und knickt."], r: 2, e: "R290 ist ziehhart. Nicht biegen, es knickt!", n: "AB 12, Infokasten C" },
+      { s: 2, f: "Kupferrohr 22 x 1: Wie groß ist der Innendurchmesser d?", a: ["20 mm", "21 mm", "24 mm"], r: 0, e: "d = D − 2 · s = 22 mm − 2 · 1 mm = 20 mm. Rechne zuerst 2 · s.", n: "AB 12, Infokasten C" },
+      { s: 1, f: "Welche Verbindung braucht eine Flamme?", a: ["Pressfitting", "Löten", "Steckverbinder"], r: 1, e: "Löten = mit Flamme. Pressen, Klemmen und Stecken gehen ohne Flamme.", n: "AB 12, Infokasten D" },
+      { s: 2, f: "Ab welcher Arbeitstemperatur spricht man von Hartlöten?", a: ["Über 100 °C", "Über 450 °C", "Über 1000 °C"], r: 1, e: "Weichlöten bis 450 °C, Hartlöten über 450 °C.", n: "AB 12, Infokasten E" },
+      { s: 2, f: "Wie verbindet man eine Gasleitung aus Kupfer beim Löten?", a: ["Weichlöten", "Hartlöten", "Löten ist bei Gas verboten."], r: 1, e: "Gas wird hartgelötet. Die Verbindung muss sehr fest sein, eine undichte Gasleitung ist lebensgefährlich.", n: "AB 12, Infokasten E" },
+      { s: 2, f: "Welche Reihenfolge ist in Fließrichtung richtig?", a: ["Zuerst verzinkter Stahl, dann Kupfer", "Zuerst Kupfer, dann verzinkter Stahl", "Das ist egal."], r: 0, e: "Fließregel: unedel vor edel. Zuerst verzinkter Stahl, dann Kupfer, nie umgekehrt.", n: "AB 12, Infokasten F" }
+    ]
   }
 ];
 
