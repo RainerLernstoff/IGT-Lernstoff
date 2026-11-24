@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-1ee8f708d8";
+const VERSION = "lernstoff-fb533324bc";
 const DATEIEN = [
   "./",
   "app.js",
@@ -57,6 +57,34 @@ const DATEIEN = [
   "inhalte/ait/jg1/06-sinnbilder-hausanschluss/bilder/sb_schraegsitz_aufgabe.png",
   "inhalte/ait/jg1/06-sinnbilder-hausanschluss/bilder/sb_wasserzaehler_aufgabe.png",
   "inhalte/ait/jg1/06-sinnbilder-hausanschluss/selbstcheck.html",
+  "inhalte/ait/jg1/07-zmass/arbeitsblatt.html",
+  "inhalte/ait/jg1/07-zmass/bilder/ab10_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/ab6_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/ab9_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/beispiel_leitung_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/fittings_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/zmass_prinzip_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/bilder/zmass_t_aufgabe.png",
+  "inhalte/ait/jg1/07-zmass/selbstcheck.html",
+  "inhalte/ait/jg1/08-flaechen/arbeitsblatt.html",
+  "inhalte/ait/jg1/08-flaechen/bilder/bad_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/einheiten_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/kreis_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/kreisring_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/lform_beispiel_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/rechteck_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/rohrmantel_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/technikraum_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/wand_bad_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/bilder/wand_beispiel_aufgabe.png",
+  "inhalte/ait/jg1/08-flaechen/selbstcheck.html",
+  "inhalte/ait/jg1/09-kunststoffe-pe/arbeitsblatt.html",
+  "inhalte/ait/jg1/09-kunststoffe-pe/bilder/extruder_aufgabe.png",
+  "inhalte/ait/jg1/09-kunststoffe-pe/bilder/kautschuk_aufgabe.png",
+  "inhalte/ait/jg1/09-kunststoffe-pe/bilder/klemmfitting_aufgabe.png",
+  "inhalte/ait/jg1/09-kunststoffe-pe/bilder/pe_rohr_aufgabe.png",
+  "inhalte/ait/jg1/09-kunststoffe-pe/bilder/wc_sitz_aufgabe.png",
+  "inhalte/ait/jg1/09-kunststoffe-pe/selbstcheck.html",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/energiefluss_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/kaeltekreislauf_aufgabe.png",

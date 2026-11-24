@@ -76,6 +76,33 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/06-sinnbilder-hausanschluss/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/06-sinnbilder-hausanschluss/selbstcheck.html#06" }
               ]
+            },
+            {
+              id: "07-zmass",
+              name: "07 z-Maß, Materialauszug",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/07-zmass/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/07-zmass/selbstcheck.html#07" }
+              ]
+            },
+            {
+              id: "08-flaechen",
+              name: "08 Flächen",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/08-flaechen/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/08-flaechen/selbstcheck.html#08" }
+              ]
+            },
+            {
+              id: "09-kunststoffe-pe",
+              name: "09 Kunststoffe, PE",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/09-kunststoffe-pe/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/09-kunststoffe-pe/selbstcheck.html#09" }
+              ]
             }
           ]
         },
