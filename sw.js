@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-fb533324bc";
+const VERSION = "lernstoff-8f5059c888";
 const DATEIEN = [
   "./",
   "app.js",
@@ -85,6 +85,34 @@ const DATEIEN = [
   "inhalte/ait/jg1/09-kunststoffe-pe/bilder/pe_rohr_aufgabe.png",
   "inhalte/ait/jg1/09-kunststoffe-pe/bilder/wc_sitz_aufgabe.png",
   "inhalte/ait/jg1/09-kunststoffe-pe/selbstcheck.html",
+  "inhalte/ait/jg1/10-volumen/arbeitsblatt.html",
+  "inhalte/ait/jg1/10-volumen/bilder/badewanne_aufgabe.png",
+  "inhalte/ait/jg1/10-volumen/bilder/einheiten_v_aufgabe.png",
+  "inhalte/ait/jg1/10-volumen/bilder/quader_aufgabe.png",
+  "inhalte/ait/jg1/10-volumen/bilder/rohr_inhalt_aufgabe.png",
+  "inhalte/ait/jg1/10-volumen/bilder/zylinder_aufgabe.png",
+  "inhalte/ait/jg1/10-volumen/selbstcheck.html",
+  "inhalte/ait/jg1/11-edelstahl/arbeitsblatt.html",
+  "inhalte/ait/jg1/11-edelstahl/bilder/schaden_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_ablaengen_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_dichtringe_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_fittings_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_praezisionsrohr_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_pressprinzip_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/bilder/skr_unverpresst_aufgabe.png",
+  "inhalte/ait/jg1/11-edelstahl/selbstcheck.html",
+  "inhalte/ait/jg1/12-kupfer/arbeitsblatt.html",
+  "inhalte/ait/jg1/12-kupfer/bilder/fliessregel_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/schaden_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_klemmring_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_lochfrass_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_loetfitting_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_pressfitting_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_rohrbenennung_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/skr_steckverbinder_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/solar_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/bilder/strangschema_aufgabe.png",
+  "inhalte/ait/jg1/12-kupfer/selbstcheck.html",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/energiefluss_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/kaeltekreislauf_aufgabe.png",

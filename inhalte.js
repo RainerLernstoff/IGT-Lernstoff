@@ -103,6 +103,33 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/09-kunststoffe-pe/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/09-kunststoffe-pe/selbstcheck.html#09" }
               ]
+            },
+            {
+              id: "10-volumen",
+              name: "10 Volumen",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/10-volumen/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/10-volumen/selbstcheck.html#10" }
+              ]
+            },
+            {
+              id: "11-edelstahl",
+              name: "11 Edelstahl",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/11-edelstahl/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/11-edelstahl/selbstcheck.html#11" }
+              ]
+            },
+            {
+              id: "12-kupfer",
+              name: "12 Kupfer",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/12-kupfer/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/12-kupfer/selbstcheck.html#12" }
+              ]
             }
           ]
         },

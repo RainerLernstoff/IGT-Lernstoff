@@ -122,6 +122,7 @@ body {
 .blatt .gitter th { background: var(--flaeche); color: var(--leise); }
 /* Feste Breite: Eine breite Tabelle im Infokasten (wischbar) darf den Kasten nicht über den Rand schieben */
 .blatt table.merk { table-layout: fixed; }
+.blatt table.mehr { width: 100%; table-layout: fixed; }
 .blatt .merk table:not([class]) td { background: none; border-left: 0; border-radius: 0; padding: 0 8px 0 0; }
 .blatt .merk .gitter td, .blatt .merk .gitter th { background: var(--hg); border-left-width: 1px; border-left-color: var(--rand); border-radius: 0; padding: 6px 8px; }
 
