@@ -208,6 +208,45 @@ const THEMEN = [
       { s: 2, f: "Das Wasser kommt von der Straße ins Haus. Was kommt gleich nach der Hauseinführung?", a: ["Anbohrschelle", "Übergangsstück", "Wasserzähler"], r: 1, e: "Reihenfolge: Versorgungsleitung → Anbohrschelle → PE-Leitung → Hauseinführung → Übergangsstück → Absperrarmatur → Wasserzähler → Absperrarmatur.", n: "AB 06, Infokasten D" },
       { s: 2, f: "Wozu gibt es vor und nach dem Wasserzähler je eine Absperrarmatur?", a: ["Man kann den Wasserzähler tauschen, ohne dass viel Wasser ausläuft.", "Damit der Druck kleiner wird.", "Damit das Wasser sauber bleibt."], r: 0, e: "Mit den zwei Absperrarmaturen sperrt man den Wasserzähler ab und kann ihn tauschen, ohne dass viel Wasser ausläuft.", n: "AB 06, Infokasten D" }
     ]
+  },
+  {
+    nr: "07", name: "z-Maß, Materialauszug", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Was ist das z-Maß?", a: ["Von der Mitte vom Fitting bis zum Rohrende im Fitting", "Von Fitting-Mitte bis Fitting-Mitte", "Die ganze Rohrlänge"], r: 0, e: "z geht von der Mitte vom Fitting bis zum Rohrende im Fitting. Von Fitting-Mitte bis Fitting-Mitte ist das M-M.", n: "AB 07, Infokasten A" },
+      { s: 1, f: "Wie rechnest du die Rohrlänge RL?", a: ["RL = M-M − z1 − z2", "RL = M-M + z1 + z2", "RL = M-M − z1"], r: 0, e: "Das Rohr geht nicht bis zur Mitte vom Fitting. Darum ziehst du an jedem Rohrende ein z-Maß ab: RL = M-M − z1 − z2.", n: "AB 07, Infokasten C" },
+      { s: 2, f: "Winkel 45° (NR 120), DN 20: Wie groß ist z?", a: ["9 mm", "10 mm", "18 mm"], r: 1, e: "In der Tabelle: Zeile Winkel 45° (NR 120), Spalte DN 20 → z = 10 mm. 18 mm wäre der Winkel 90°.", n: "AB 07, Infokasten B" },
+      { s: 2, f: "DN 15, links und rechts ein Winkel 90°, M-M = 260 mm. Wie lang ist das Rohr?", a: ["245 mm", "230 mm", "290 mm"], r: 1, e: "z = 15 mm an jedem Ende. RL = 260 mm − 15 mm − 15 mm = 230 mm. Wer nur einmal abzieht, bekommt 245 mm.", n: "AB 07, Infokasten C" },
+      { s: 2, f: "DN 20, links ein T-Stück, rechts ein Winkel 90°, M-M = 500 mm. Wie lang ist das Rohr?", a: ["482 mm", "464 mm", "536 mm"], r: 1, e: "T-Stück und Winkel 90° haben bei DN 20 beide z = 18 mm. RL = 500 mm − 18 mm − 18 mm = 464 mm.", n: "AB 07, Infokasten B und C" },
+      { s: 2, f: "Rohrlänge gesamt 4,20 m. Wie viel bestellst du mit 10 % Verschnitt?", a: ["4,20 m", "4,62 m", "5,20 m"], r: 1, e: "Verschnitt = 4,20 m · 10 : 100 = 0,42 m. Bestellen = 4,20 m + 0,42 m = 4,62 m.", n: "AB 07, Infokasten E" },
+      { s: 2, f: "Rohrlänge gesamt 9,00 m. Wie viele 6-m-Stangen bestellst du?", a: ["1 Stange", "2 Stangen", "1,65 Stangen"], r: 1, e: "Mit Verschnitt: 9,00 m + 0,90 m = 9,90 m. 9,90 m : 6 m = 1,65 → immer aufrunden: 2 Stangen.", n: "AB 07, Infokasten E" },
+      { s: 1, f: "Was steht im Materialauszug in der Spalte „Stk. / lfm“?", a: ["Wie viel (Stück oder Laufmeter)", "Wie groß (DN)", "Was genau (Bezeichnung)"], r: 0, e: "Stk. / lfm sagt, wie viel: Fittings in Stück, Rohr in Laufmeter. Wie groß steht bei Dimension, was genau bei Bezeichnung.", n: "AB 07, Infokasten F" }
+    ]
+  },
+  {
+    nr: "08", name: "Flächen", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "1 m² = ? dm²", a: ["10 dm²", "100 dm²", "1000 dm²"], r: 1, e: "Bei Flächen ist der Schritt von einer Einheit zur nächsten immer 100. 1 m² = 100 dm².", n: "AB 08, Infokasten A" },
+      { s: 2, f: "640 cm² = ? dm²", a: ["64 dm²", "6,4 dm²", "0,64 dm²"], r: 1, e: "Kleine Einheit → große Einheit: durch 100. 640 cm² : 100 = 6,4 dm².", n: "AB 08, Infokasten A" },
+      { s: 1, f: "Ein Raum ist 5 m lang und 3 m breit. Wie groß ist die Fläche?", a: ["8 m²", "15 m²", "16 m²"], r: 1, e: "A = a · b = 5 m · 3 m = 15 m². 16 m wäre der Umfang, 8 m nur zwei Seiten zusammen.", n: "AB 08, Infokasten B" },
+      { s: 2, f: "Derselbe Raum (5 m lang, 3 m breit): Wie groß ist der Umfang?", a: ["8 m", "15 m", "16 m"], r: 2, e: "U = 2 · a + 2 · b = 2 · 5 m + 2 · 3 m = 10 m + 6 m = 16 m.", n: "AB 08, Infokasten B" },
+      { s: 2, f: "Eine Wand ist 3,50 m lang und 2,50 m hoch. Die Tür ist 0,80 m × 2,00 m. Wie groß ist die Nettofläche?", a: ["7,15 m²", "10,35 m²", "8,75 m²"], r: 0, e: "Wand: 3,50 m · 2,50 m = 8,75 m². Tür: 0,80 m · 2,00 m = 1,60 m². Netto: 8,75 m² − 1,60 m² = 7,15 m².", n: "AB 08, Infokasten D" },
+      { s: 2, f: "Ein Kreis hat d = 10 cm. Wie groß ist die Fläche? (π = 3,14)", a: ["31,4 cm²", "78,5 cm²", "314 cm²"], r: 1, e: "A = d · d · 3,14 : 4 = 10 · 10 · 3,14 : 4 = 78,5 cm². Wer : 4 vergisst, bekommt 314. 31,4 cm ist der Umfang.", n: "AB 08, Infokasten E" },
+      { s: 2, f: "Wie rechnest du den Kreisring (Sägequerschnitt) vom Rohr?", a: ["Große Kreisfläche minus kleine Kreisfläche", "Große Kreisfläche plus kleine Kreisfläche", "Umfang mal Länge"], r: 0, e: "Kreisring = große Kreisfläche (mit D) minus kleine Kreisfläche (mit d). Umfang mal Länge ist die Mantelfläche.", n: "AB 08, Infokasten F" },
+      { s: 2, f: "Ein Rohr hat außen den Umfang U = 0,20 m und ist 5 m lang. Wie groß ist die Mantelfläche?", a: ["1,00 m²", "5,20 m²", "0,04 m²"], r: 0, e: "Mantelfläche = Umfang mal Rohrlänge: M = 0,20 m · 5 m = 1,00 m².", n: "AB 08, Infokasten G" }
+    ]
+  },
+  {
+    nr: "09", name: "Kunststoffe, PE", gruen: 7, gelb: 5,
+    fragen: [
+      { s: 1, f: "Woraus macht man Kunststoff?", a: ["Aus Erdöl, Erdgas und Kohle", "Aus Sand und Kalk", "Aus Eisenerz"], r: 0, e: "Kunststoff wird aus Erdöl, Erdgas und Kohle gemacht. Der Rohstoff wird chemisch umgewandelt (Synthese).", n: "AB 09, Infokasten A" },
+      { s: 1, f: "Warum sind fast alle Kunststoffe brennbar?", a: ["Weil sie Kohlenstoff enthalten.", "Weil sie leicht sind.", "Weil sie innen glatt sind."], r: 0, e: "Alle Kunststoffe enthalten Kohlenstoff. Darum sind fast alle brennbar.", n: "AB 09, Infokasten A" },
+      { s: 2, f: "Unter welcher Temperatur verlegst du Kunststoffrohre nie?", a: ["Unter 0 °C", "Unter −10 °C", "Unter −30 °C"], r: 1, e: "Bei großer Kälte werden Kunststoffrohre spröde. Verlege sie nie, wenn es kälter als −10 °C ist.", n: "AB 09, Infokasten B" },
+      { s: 2, f: "Welcher Zusatzstoff schützt den Kunststoff vor Sonnenlicht und Wärme?", a: ["Weichmacher", "Stabilisatoren", "Metallschicht"], r: 1, e: "Stabilisatoren schützen vor Sonnenlicht und Wärme, der Kunststoff hält länger. Weichmacher machen ihn weicher.", n: "AB 09, Infokasten C" },
+      { s: 1, f: "Was macht die Düse beim Extruder?", a: ["Sie macht den Kunststoff warm.", "Sie gibt dem Rohr die Form.", "Sie kühlt das Rohr."], r: 1, e: "Die Düse gibt dem Rohr die Form und den Durchmesser. Warm machen die Heizbänder.", n: "AB 09, Infokasten D" },
+      { s: 2, f: "Welche Kunststoffe kann man schweißen?", a: ["Thermoplaste", "Duroplaste", "Elastomere"], r: 0, e: "Thermoplaste werden bei Wärme weich. Nur sie kann man schweißen.", n: "AB 09, Infokasten E" },
+      { s: 2, f: "Warum kommt ein einfaches PE-Rohr nicht in die Heizung?", a: ["Sauerstoff wandert durch die Rohrwand, Metallteile in der Heizung rosten.", "PE wird schon bei 30 °C weich.", "PE ist zu schwer."], r: 0, e: "Sauerstoff kann durch die Rohrwand von PE wandern (Diffusion). Dann rosten Heizkörper und Kessel.", n: "AB 09, Infokasten F" },
+      { s: 2, f: "Wie viel Wärme verträgt PVC höchstens?", a: ["60 °C", "120 °C", "200 °C"], r: 0, e: "PVC verträgt höchstens 60 °C. Darum nicht für Warmwasser und Heizung. 120 °C verträgt PEX.", n: "AB 09, Infokasten H" }
+    ]
   }
 ];
 
