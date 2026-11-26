@@ -130,6 +130,15 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/12-kupfer/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/12-kupfer/selbstcheck.html#12" }
               ]
+            },
+            {
+              id: "15-mehrschichtverbund-pp-abfluss",
+              name: "15 Mehrschichtverbund, PP, Abfluss",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/selbstcheck.html#15" }
+              ]
             }
           ]
         },

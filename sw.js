@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-8f5059c888";
+const VERSION = "lernstoff-581d76a3a9";
 const DATEIEN = [
   "./",
   "app.js",
@@ -113,6 +113,20 @@ const DATEIEN = [
   "inhalte/ait/jg1/12-kupfer/bilder/solar_aufgabe.png",
   "inhalte/ait/jg1/12-kupfer/bilder/strangschema_aufgabe.png",
   "inhalte/ait/jg1/12-kupfer/selbstcheck.html",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/arbeitsblatt.html",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_abfluss_muffe_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_abfluss_pe_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_msv_anschnitt_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_msv_pressfitting_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_msv_steckverbinder_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_pp_bogen_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_pp_tstueck_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/hebeanlage_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/msv_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/schweiss_bild_a_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/schweiss_bild_b_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/steckmuffe_app_aufgabe.png",
+  "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/selbstcheck.html",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/energiefluss_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/kaeltekreislauf_aufgabe.png",
