@@ -148,6 +148,15 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/selbstcheck.html#15" }
               ]
+            },
+            {
+              id: "16-montage-heizungstechnik",
+              name: "16 Montage Heizungstechnik",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/16-montage-heizungstechnik/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/16-montage-heizungstechnik/selbstcheck.html#16" }
+              ]
             }
           ]
         },

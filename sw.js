@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-c75432c1e8";
+const VERSION = "lernstoff-c117526e12";
 const DATEIEN = [
   "./",
   "app.js",
@@ -142,6 +142,13 @@ const DATEIEN = [
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/schweiss_bild_b_aufgabe.png",
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/steckmuffe_app_aufgabe.png",
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/selbstcheck.html",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/arbeitsblatt.html",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_hk_ruecklauf_aufgabe.png",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_hk_vm_aufgabe.png",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_hk_vorlauf_aufgabe.png",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_tv_schnitt_aufgabe.png",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_tv_skala_aufgabe.png",
+  "inhalte/ait/jg1/16-montage-heizungstechnik/selbstcheck.html",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/energiefluss_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/kaeltekreislauf_aufgabe.png",
