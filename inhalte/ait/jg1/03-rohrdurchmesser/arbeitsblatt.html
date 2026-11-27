@@ -67,9 +67,9 @@
 
 <h2>Aufgabe 2 &nbsp;<span class="stern">★★</span> mittel</h2>
 <p>Ein Lehrling hat gerechnet. Nicht alles stimmt.</p>
-<p class="auftrag">Kreuze an: richtig (R) oder falsch (F). Ist es falsch, schreib das richtige Ergebnis dazu.</p>
+<p class="auftrag">Kreuze an: stimmt oder stimmt nicht. Stimmt es nicht, schreib das richtige Ergebnis dazu.</p>
 <table class="gitter">
-<tr><th style="text-align:left">Rechnung vom Lehrling</th><th>R</th><th>F</th><th>richtig ist</th></tr>
+<tr><th style="text-align:left">Rechnung vom Lehrling</th><th>stimmt</th><th>stimmt nicht</th><th>richtig ist</th></tr>
 <tr><td style="text-align:left">Rohr 54 x 2. <b>Gesucht: Innendurchmesser d</b><br>d = 54 mm − 2 mm = 52 mm</td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MA=="></button></td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MQ=="></button></td><td><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="ZCA9IDUwIG1t"></textarea></td></tr>
 <tr><td style="text-align:left">Rohr 22 x 1. <b>Gesucht: Innendurchmesser d</b><br>d = 22 mm − 2 · 1 mm = 20 mm</td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MQ=="></button></td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MA=="></button></td><td></td></tr>
 <tr><td style="text-align:left">Rohr 35 x 1,5. <b>Gesucht: Außenradius R</b><br>R = 35 mm : 2 = 17,5 mm</td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MQ=="></button></td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MA=="></button></td><td></td></tr>
@@ -228,7 +228,7 @@
 <tr><td>Einsetzen: Iso =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="KDY4IG1tIOKIkiAyOCBtbSkgOiAyID0gNDAgbW0gOiAy"></textarea></td></tr>
 <tr><td>Ergebnis: Iso =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="MjAgbW0="></td></tr>
 </table>
-<p><b>b)</b> Gewinderohr DN 32. Im Schacht ist D ges = 110 mm frei. Gesucht ist wieder Iso. Den Außendurchmesser D suchst du in der Rohrtabelle. Die Zeichnung gilt auch hier, nur die Zahlen sind anders. Gib das Ergebnis auch in cm an. Runde auf 1 Kommastelle.</p>
+<p><b>b)</b> Gewinderohr DN 32. Im Schacht ist D ges = 110 mm frei. Gesucht ist wieder Iso. Den Außendurchmesser D suchst du in der Rohrtabelle. Die Zeichnung gilt auch hier. Gib das Ergebnis in mm und in cm an. Runde die cm auf 1 Kommastelle.</p>
 <table>
 <tr><td>D aus der Tabelle:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RCA9IDQyLDQgbW0="></textarea></td></tr>
 <tr><td>Einsetzen: Iso =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="KDExMCBtbSDiiJIgNDIsNCBtbSkgOiAyID0gNjcsNiBtbSA6IDI="></textarea></td></tr>
@@ -245,12 +245,13 @@
 <p>&nbsp;&nbsp;<b>M-M = D1 : 2 + A + D2 : 2</b></p>
 <p>Beispiel: zwei Rohre mit D = 22 mm, A = 50 mm &nbsp;→ &nbsp;M-M = 11 mm + 50 mm + 11 mm = <b>72 mm</b></p>
 <p><b>Rohre mit Dämmung:</b> Dann nimmst du <b>D ges</b> statt D. A geht dann von Dämmung zu Dämmung.</p>
-<p><b>M-M ist bekannt, A ist gesucht?</b> &nbsp;<b>A = M-M − D1 : 2 − D2 : 2</b></p>
+<p><b>M-M ist bekannt, A ist gesucht?</b> &nbsp;<b>A = M-M − (D1 : 2) − (D2 : 2)</b> &nbsp;(zuerst die Klammern rechnen)</p>
 </td></tr></table>
 
 <h2>Aufgabe 9 &nbsp;<span class="stern">★</span> / <span class="stern">★★</span></h2>
 <p class="auftrag">Lies Infokasten D. Rechne das Maß M-M aus. Schreib jeden Schritt auf.</p>
-<p align="center"><img src="bilder/mm_a9_aufgabe.png" alt="Skizze" style="width:302px" loading="lazy"></p>
+<p align="center"><img src="bilder/mm_a9_aufgabe.png" alt="Skizze" style="width:264px" loading="lazy"></p>
+<p>Nur Prinzip-Skizze. Mit Dämmung (c) nimmst du <b>D ges</b> statt D.</p>
 <p><b>a) <span class="stern">★</span> leicht:</b> zwei Kupferrohre 28 x 1,5. &nbsp;A = 60 mm. &nbsp;Rechne in mm.</p>
 <table>
 <tr><td>halbe Durchmesser:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RDEgOiAyID0gMjggbW0gOiAyID0gMTQgbW0gJm5ic3A7Jm5ic3A7Jm5ic3A7RDIgOiAyID0gMTQgbW0="></textarea></td></tr>
@@ -275,10 +276,10 @@
 </table>
 
 <h2>Aufgabe 10 &nbsp;<span class="stern">★★</span> mittel</h2>
-<p>Zwei Gewinderohre DN 25 hängen an der Decke. Das Maß M-M ist <b>150 mm</b>.</p>
-<p class="auftrag">Lies Infokasten D. Wie groß ist der Abstand A zwischen den Rohren? Rechne in mm.</p>
+<p class="auftrag">Zwei Gewinderohre DN 25, M-M = <b>150 mm</b>. Lies Infokasten D. Rechne den Abstand A in mm.</p>
 <table>
-<tr><td>D aus der Tabelle:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RCA9IDMzLDcgbW0gJm5ic3A7Jm5ic3A7Jm5ic3A7RCA6IDIgPSAxNiw4NSBtbQ=="></textarea></td></tr>
+<tr><td>D aus der Tabelle:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RCA9IDMzLDcgbW0="></textarea></td></tr>
+<tr><td>halbe Durchmesser:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RDEgOiAyID0gMzMsNyBtbSA6IDIgPSAxNiw4NSBtbSAmbmJzcDsmbmJzcDsmbmJzcDtEMiA6IDIgPSAxNiw4NSBtbQ=="></textarea></td></tr>
 <tr><td>Einsetzen: A =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MTUwIG1tIOKIkiAxNiw4NSBtbSDiiJIgMTYsODUgbW0="></textarea></td></tr>
 <tr><td>Ergebnis: A =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="MTE2LDMgbW0="></td></tr>
 </table>
@@ -328,10 +329,11 @@
 <tr><td>D ges Vorlauf =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjggbW0gKyAyIMK3IDMwIG1tID0gODggbW0="></textarea></td></tr>
 <tr><td>D ges Rücklauf =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="ODggbW0gKGdsZWljaCB3aWUgVm9ybGF1Zik="></textarea></td></tr>
 <tr><td>D ges Kaltwasser =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MzIgbW0gKyAyIMK3IDEzIG1tID0gNTggbW0="></textarea></td></tr>
-<tr><td>in mm umrechnen:</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="QSA9IDUgY20gPSA1MCBtbSAmbmJzcDsmbmJzcDsmbmJzcDvDnGJlcmzDpG5nZSA9IDMgY20gPSAzMCBtbQ=="></textarea></td></tr>
+<tr><td>Abstand A = 5 cm =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="NTAgbW0="></td></tr>
+<tr><td>Überlänge = 3 cm =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="MzAgbW0="></td></tr>
 <tr><td>2 Abstände A =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MiDCtyA1MCBtbSA9IDEwMCBtbQ=="></textarea></td></tr>
-<tr><td>L =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjUgbW0gKyA4OCBtbSArIDg4IG1tICsgNTggbW0gKyAxMDAgbW0gKyAzMCBtbQ=="></textarea></td></tr>
-<tr><td>L =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="Mzg5IG1t"></td></tr>
+<tr><td>Einsetzen: L =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjUgbW0gKyA4OCBtbSArIDg4IG1tICsgNTggbW0gKyAxMDAgbW0gKyAzMCBtbQ=="></textarea></td></tr>
+<tr><td>Ergebnis: L =</td><td style="border-bottom:1pt solid black; height:24pt"><input class="eintrag" type="text" inputmode="text" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="Mzg5IG1t"></td></tr>
 </table>
 <p class="auftrag">b) Welche Konsole nimmst du aus dem Lager? Nimm die kürzeste, die lang genug ist. Kreuze an.</p>
 <table class="gitter">
@@ -363,7 +365,7 @@
 <table>
 <tr><td>D ges KW =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjIgbW0gKyAyIMK3IDkgbW0gPSA0MCBtbQ=="></textarea></td></tr>
 <tr><td>D ges WW =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjIgbW0gKyAyIMK3IDIwIG1tID0gNjIgbW0="></textarea></td></tr>
-<tr><td>Schlitzbreite B =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MTAgbW0gKyA0MCBtbSArIDIwIG1tICsgNjIgbW0gKyAxMCBtbSA9IDE0MiBtbQ=="></textarea></td></tr>
+<tr><td>Breite B =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MTAgbW0gKyA0MCBtbSArIDIwIG1tICsgNjIgbW0gKyAxMCBtbSA9IDE0MiBtbQ=="></textarea></td></tr>
 <tr><td>Tiefe T =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MTAgbW0gKyA2MiBtbSArIDEwIG1tID0gODIgbW0="></textarea></td></tr>
 </table>
 <p class="auftrag">b) Passt der Schlitz zur Vorgabe vom Polier? Kreuze an. Ergänze den Satz.</p>
@@ -371,9 +373,9 @@
 <tr><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MA=="></button> ja</td><td><button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MQ=="></button> nein</td></tr>
 </table>
 <table>
-<tr><td style="border-bottom:1pt solid black; height:24pt">Der Schlitz ist <input class="eintrag" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="ODI="> mm tief. Erlaubt sind <input class="eintrag" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="ODA="> mm. <textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RGVyIFNjaGxpdHogaXN0IHp1IHRpZWYu"></textarea></td></tr>
+<tr><td style="border-bottom:1pt solid black; height:24pt">Der Schlitz ist <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="eintrag" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="ODI=">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> mm tief. Erlaubt sind 8 cm = <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="eintrag" type="text" inputmode="decimal" autocomplete="off" autocorrect="off" spellcheck="false" aria-label="Antwort" data-s="ODA=">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> mm.</td></tr>
 </table>
-<p class="auftrag">c) Wie groß ist das Maß M-M zwischen den beiden Rohren? Nimm D ges.</p>
+<p class="auftrag">c) Lies Infokasten D. Wie groß ist das Maß M-M zwischen den beiden Rohren? Nimm D ges.</p>
 <table>
 <tr><td>Einsetzen: M-M =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="NDAgbW0gOiAyICsgMjAgbW0gKyA2MiBtbSA6IDI="></textarea></td></tr>
 <tr><td>Ergebnis: M-M =</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="MjAgbW0gKyAyMCBtbSArIDMxIG1tID0gNzEgbW0="></textarea></td></tr>
@@ -389,13 +391,15 @@
 </table>
 <p align="center"><img src="bilder/schacht_a14_aufgabe.png" alt="Skizze" style="width:567px" loading="lazy"></p>
 <p class="auftrag">a) Passen die drei Rohre in den Schacht? Plane die Schritte selbst. Schreib jeden Schritt auf.</p>
+<p>So fängst du an: Rechne zuerst D ges für jedes Rohr aus (Infokasten C).</p>
 <table>
-<tr><td>1.</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RCBnZXMgVkwgPSBEIGdlcyBSTCA9IDQyLDQgbW0gKyAyIMK3IDMwIG1tID0gMTAyLDQgbW0="></textarea></td></tr>
+<tr><td>1.</td><td style="border-bottom:1pt solid black; height:24pt">D ges Vorlauf und Rücklauf = <textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="NDIsNCBtbSArIDIgwrcgMzAgbW0gPSAxMDIsNCBtbQ=="></textarea></td></tr>
 <tr><td>2.</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RCBnZXMgS1cgPSAyMiBtbSArIDIgwrcgMTMgbW0gPSA0OCBtbQ=="></textarea></td></tr>
 <tr><td>3.</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="QnJlaXRlID0gMjAgKyAxMDIsNCArIDIwICsgMTAyLDQgKyAyMCArIDQ4ICsgMjAgKG1tKQ=="></textarea></td></tr>
 <tr><td>4.</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="QnJlaXRlID0gMzMyLDggbW0uIERhcyBpc3QgbWVociBhbHMgMjUwIG1tIOKGkiBwYXNzdCBuaWNodC4="></textarea></td></tr>
-<tr><td>5.</td><td style="border-bottom:1pt solid black; height:24pt">&nbsp;</td></tr>
+<tr><td>5.</td><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="RXMgZmVobGVuIDMzMiw4IG1tIOKIkiAyNTAgbW0gPSA4Miw4IG1tLg=="></textarea></td></tr>
 </table>
+<p>Passt es? &nbsp;<button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MA=="></button> ja &nbsp;&nbsp;&nbsp;<button type="button" class="kreuz" aria-pressed="false" aria-label="Kästchen" data-s="MQ=="></button> nein</p>
 <p class="auftrag">b) Wie breit muss der Schacht mindestens sein? Runde auf ganze mm auf.</p>
 <table>
 <tr><td style="border-bottom:1pt solid black; height:24pt"><textarea class="eintrag frei" rows="2" aria-label="Antwort in eigenen Worten" data-s="bWluZGVzdGVucyAzMzMgbW0gKD0gMzMsMyBjbSk="></textarea></td></tr>
