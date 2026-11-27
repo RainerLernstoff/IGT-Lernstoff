@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-8d06ec53ba";
+const VERSION = "lernstoff-43feb68e96";
 const DATEIEN = [
   "./",
   "app.js",
@@ -22,11 +22,16 @@ const DATEIEN = [
   "inhalte/ait/jg1/02-laengenberechnung/selbstcheck.html",
   "inhalte/ait/jg1/03-rohrdurchmesser/arbeitsblatt.html",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/konsole_aufgabe.png",
+  "inhalte/ait/jg1/03-rohrdurchmesser/bilder/konsole_heizraum_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/mitte_mitte_aufgabe.png",
+  "inhalte/ait/jg1/03-rohrdurchmesser/bilder/mm_a9_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/pe_hd_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/rohr_daemmung_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/rohrbenennung_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/rohrmasse_info_aufgabe.png",
+  "inhalte/ait/jg1/03-rohrdurchmesser/bilder/schacht_a14_aufgabe.png",
+  "inhalte/ait/jg1/03-rohrdurchmesser/bilder/schacht_iso_aufgabe.png",
+  "inhalte/ait/jg1/03-rohrdurchmesser/bilder/schlitz_a13_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/bilder/schlitz_aufgabe.png",
   "inhalte/ait/jg1/03-rohrdurchmesser/selbstcheck.html",
   "inhalte/ait/jg1/04-rohrwerkstoffe/arbeitsblatt.html",
