@@ -157,6 +157,15 @@ const INHALTE = {
                 { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/16-montage-heizungstechnik/arbeitsblatt.html" },
                 { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/16-montage-heizungstechnik/selbstcheck.html#16" }
               ]
+            },
+            {
+              id: "17-stahlrohr-gewinde-flansche",
+              name: "17 Stahlrohr, Gewinde, Flansche",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/selbstcheck.html#17" }
+              ]
             }
           ]
         },

@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-4177e5e3f3";
+const VERSION = "lernstoff-7a983270a2";
 const DATEIEN = [
   "./",
   "app.js",
@@ -149,6 +149,24 @@ const DATEIEN = [
   "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_tv_schnitt_aufgabe.png",
   "inhalte/ait/jg1/16-montage-heizungstechnik/bilder/foto_tv_skala_aufgabe.png",
   "inhalte/ait/jg1/16-montage-heizungstechnik/selbstcheck.html",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/arbeitsblatt.html",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/fehler_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_a_flansch_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_a_nippel_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_a_pressfitting_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_a_stopfen_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_a_verschraubung_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_auslauf_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_dichtfaden_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_flansch_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_flansch_schnitt_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_hanf_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_paste_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_r_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_rp_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/foto_verschraubung_schnitt_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/bilder/gewinde_info_aufgabe.png",
+  "inhalte/ait/jg1/17-stahlrohr-gewinde-flansche/selbstcheck.html",
   "inhalte/ait/jg3/waermepumpe/bilder/cop_vorlauf_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/energiefluss_aufgabe.png",
   "inhalte/ait/jg3/waermepumpe/bilder/kaeltekreislauf_aufgabe.png",
