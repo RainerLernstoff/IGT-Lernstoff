@@ -132,6 +132,15 @@ const INHALTE = {
               ]
             },
             {
+              id: "14-kupferlegierungen-armaturen",
+              name: "14 Kupferlegierungen, Armaturen",
+              info: "Arbeitsblatt, Selbstcheck",
+              teile: [
+                { name: "Arbeitsblatt", info: "Infokästen und Aufgaben zum Ausfüllen", datei: "inhalte/ait/jg1/14-kupferlegierungen-armaturen/arbeitsblatt.html" },
+                { name: "✓ Selbstcheck", info: "8 Fragen, ca. 5 Minuten", datei: "inhalte/ait/jg1/14-kupferlegierungen-armaturen/selbstcheck.html#14" }
+              ]
+            },
+            {
               id: "15-mehrschichtverbund-pp-abfluss",
               name: "15 Mehrschichtverbund, PP, Abfluss",
               info: "Arbeitsblatt, Selbstcheck",

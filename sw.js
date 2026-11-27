@@ -1,7 +1,7 @@
 // Offline-Speicher (Service Worker) der App „IGT: Lernstoff“.
 // Wird von werkzeuge\baue-inhalte.ps1 erzeugt. NICHT von Hand ändern.
 // Beim ersten Öffnen speichert das Handy alle Dateien. Danach geht die App auch ohne Internet.
-const VERSION = "lernstoff-581d76a3a9";
+const VERSION = "lernstoff-8d06ec53ba";
 const DATEIEN = [
   "./",
   "app.js",
@@ -113,6 +113,16 @@ const DATEIEN = [
   "inhalte/ait/jg1/12-kupfer/bilder/solar_aufgabe.png",
   "inhalte/ait/jg1/12-kupfer/bilder/strangschema_aufgabe.png",
   "inhalte/ait/jg1/12-kupfer/selbstcheck.html",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/arbeitsblatt.html",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_kugelhahn_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_messing_tstueck_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_rueckschlag_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_schraegsitz_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_sicherheitsventil_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/foto_strangregulier_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/tafel_ab_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/bilder/tafel_ab13_aufgabe.png",
+  "inhalte/ait/jg1/14-kupferlegierungen-armaturen/selbstcheck.html",
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/arbeitsblatt.html",
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_abfluss_muffe_aufgabe.png",
   "inhalte/ait/jg1/15-mehrschichtverbund-pp-abfluss/bilder/foto_abfluss_pe_aufgabe.png",
